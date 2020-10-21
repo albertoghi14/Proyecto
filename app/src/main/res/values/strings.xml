@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Proyecto</string>
+
+    <string name="editText_usuario_iniciar_sesion">Usuario</string>
+    <string name="editText_password_iniciar_sesion">Contraseña</string>
+    <string name="button_iniciar_sesion">Iniciar Sesión</string>
+    <string name="button_registrarse">Registrarse</string>
 </resources>
