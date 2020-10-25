@@ -5,4 +5,18 @@
     <string name="editText_password_iniciar_sesion">Contraseña</string>
     <string name="button_iniciar_sesion">Iniciar Sesión</string>
     <string name="button_registrarse">Registrarse</string>
+    <string name="textView_titulo_registrarse">CREAR NUEVA CUENTA</string>
+    <string name="editText_nombre_registrarse">Introduce un nombre...</string>
+    <string name="editText_apellidos_registrar">Introduce tus apellidos...</string>
+    <string name="checkBox_hombre_registrar">Hombre</string>
+    <string name="checkBox_mujer_registrar">Mujer</string>
+    <string name="editText_localidad_registrarse">Introduce tu localidad</string>
+    <string name="editText_telefono_registrarse">Introduce tu número de teléfono (opcional)</string>
+    <string name="editText_usuario_registrar">Introduce un usuario</string>
+    <string name="editText_password_registrar">Introduce una contraseña...</string>
+    <string name="editText_password_registrar_validacion">Introduce de nuevo tu contraseña...</string>
+    <string name="button_cancelar_registrar">Cancelar</string>
+    <string name="button_crear_registrarse">Crear</string>
+    <string name="radioButton_termino_uno">Terminos</string>
+    <string name="radioButton_termino_dos">Terminos 2</string>
 </resources>
