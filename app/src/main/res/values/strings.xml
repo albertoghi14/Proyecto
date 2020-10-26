@@ -19,4 +19,12 @@
     <string name="button_crear_registrarse">Crear</string>
     <string name="radioButton_termino_uno">Terminos</string>
     <string name="radioButton_termino_dos">Terminos 2</string>
+    <string name="textView_fecha_nacimiento_registrar">Fecha de nacimiento:</string>
+    <string name="textView_nacionalidad_registrar">Nacionalidad:</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_inicio_asignaturas">Asignaturas</string>
+    <string name="menu_inicio_profesores">Profesores</string>
+    <string name="menu_inicio_horario">Horario</string>
+    <string name="menu_inicio_cuenta">Cuenta</string>
+
 </resources>
