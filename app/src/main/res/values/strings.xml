@@ -26,5 +26,21 @@
     <string name="menu_inicio_profesores">Profesores</string>
     <string name="menu_inicio_horario">Horario</string>
     <string name="menu_inicio_cuenta">Cuenta</string>
+    <string name="menu__opciones_cuenta_configuracion">Configuración</string>
+    <string name="menu__opciones_cuenta_cerrar_sesion">Cerrar sesión</string>
+    <string name="menu_anadir_cursos_asignaturas">Nuevo curso</string>
+    <string name="menu_modificar_cursos_asignaturas">Modificar curso</string>
+    <string name="menu_eliminar_cursos_asignaturas">Eliminar curso</string>
+    <string name="menu_anadir_cursos_profesores">Nuevo curso</string>
+    <string name="menu_modificar_cursos_profesores">Modificar curso</string>
+    <string name="menu_eliminar_cursos_profesores">Eliminar curso</string>
+    <string name="menu_anadir_asignaturas">Nueva asignatura</string>
+    <string name="menu_eliminar_asignaturas">Eliminar asignatura</string>
+    <string name="menu_anadir_profesores">Nuevo profesor</string>
+    <string name="menu_modificar_profesor">Modificar profesor</string>
+    <string name="menu_eliminar_profesor">Eliminar profesor</string>
+    <string name="menu_anadir_cursos_horarios">Nuevo curso</string>
+    <string name="menu_modificar_cursos_horarios">Modificar curso</string>
+    <string name="menu_eliminar_cursos_horarios">Eliminar curso</string>
 
 </resources>
