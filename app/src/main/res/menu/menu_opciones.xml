@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/menu_inicio"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_inicio" >
+    </item>
+
+    <item
+        android:id="@+id/menu_inicio_asignaturas"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_inicio_asignaturas">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_inicio_profesores"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_inicio_profesores" >
+    </item>
+
+    <item
+        android:id="@+id/menu_inicio_horario"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_inicio_horario" >
+    </item>
+
+    <item
+        android:id="@+id/menu_inicio_cuenta"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_inicio_cuenta" >
+    </item>
+</menu>

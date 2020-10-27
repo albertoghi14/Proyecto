@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_anadir_profesores"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_anadir_profesores" >
+    </item>
+
+    <item
+        android:id="@+id/menu_modificar_profesor"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_modificar_profesor">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_eliminar_profesor"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_eliminar_profesor" >
+    </item>
+
+</menu>
