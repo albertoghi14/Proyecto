@@ -9,14 +9,15 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ActivityCuatro extends AppCompatActivity {
+public class ActivityTrece extends AppCompatActivity {
+
     ListView lista;
     AdaptadorAsignatura adaptador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuatro);
+        setContentView(R.layout.activity_trece);
 
         lista = (ListView) findViewById(R.id.listView_cursos);
         adaptador = new AdaptadorAsignatura(this, GetArrayItems());
@@ -35,7 +36,6 @@ public class ActivityCuatro extends AppCompatActivity {
 
         return listaAsignaturas;
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -62,4 +62,5 @@ public class ActivityCuatro extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }

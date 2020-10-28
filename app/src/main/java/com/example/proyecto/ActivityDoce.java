@@ -2,6 +2,7 @@ package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,7 +30,8 @@ public class ActivityDoce extends AppCompatActivity {
                 return true;
 
             case R.id.menu_opciones_cuenta_cerrar_sesion:
-
+                Intent cerrarSesion = new Intent(this, MainActivity.class);
+                startActivity(cerrarSesion);
                 return true;
 
             default:
