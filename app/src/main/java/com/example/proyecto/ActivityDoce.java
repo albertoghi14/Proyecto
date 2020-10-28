@@ -1,7 +1,9 @@
 package com.example.proyecto;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,12 +32,29 @@ public class ActivityDoce extends AppCompatActivity {
                 return true;
 
             case R.id.menu_opciones_cuenta_cerrar_sesion:
-                Intent cerrarSesion = new Intent(this, MainActivity.class);
-                startActivity(cerrarSesion);
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage(R.string.mensajeSeguroSalir)
+                        .setPositiveButton(R.string.opcionSi,
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent cerrarSesion = new Intent(ActivityDoce.this, MainActivity.class);
+                                        startActivity(cerrarSesion);
+
+
+                                    }})
+                        .setNegativeButton(R.string.opcionNo,
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }});
+                builder.create().show();
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }

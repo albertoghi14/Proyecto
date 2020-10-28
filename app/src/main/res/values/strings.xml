@@ -42,5 +42,24 @@
     <string name="menu_anadir_cursos_horarios">Nuevo curso</string>
     <string name="menu_modificar_cursos_horarios">Modificar curso</string>
     <string name="menu_eliminar_cursos_horarios">Eliminar curso</string>
+    <string name="opcionSi">Salir</string>
+    <string name="opcionNo">Cancelar</string>
+    <string name="mensajeSeguroSalir">Si pulsa el botón salir su sesión se cerrará para dicha aplicación. ¿Desea salir de la sesión?</string>
+    <string name="textView_informacion_personal_cuenta">Información personal</string>
+    <string name="textView_nombre_cuenta">Nombre</string>
+    <string name="textView_apellidos_cuenta">Apellidos</string>
+    <string name="textView_fecha_nacimiento_cuenta">Fecha de nacimiento</string>
+    <string name="textView_usuario_cuenta">Usuario</string>
+    <string name="textView_sexo_cuenta">Sexo</string>
+    <string name="textView_informacion_nombre_cuenta">Nombre cliente</string>
+    <string name="textView_informacion_apellidos_cuenta">Apellido1 Apellido2</string>
+    <string name="textView_informacion_sexo_cuenta">Sexo escogido</string>
+    <string name="textView_infomacion_fecha_nacimiento_cuenta">16/07/1994</string>
+    <string name="textView_informacion_usuario_cuenta">Nombre de usuario</string>
+    <string name="menu_anadir_alumno">Nuevo alumno</string>
+    <string name="menu_eliminar_alumno">Eliminar alumno</string>
+    <string name="menu_contextual_alumno_modificar">Modificar alumno</string>
+    <string name="menu_contextual_alumno_enviar_email">Enviar email</string>
+    <string name="menu_contextual_alumno_llamar">Llamar</string>
 
 </resources>

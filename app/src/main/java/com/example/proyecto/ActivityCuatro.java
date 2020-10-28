@@ -2,10 +2,14 @@ package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,9 +22,44 @@ public class ActivityCuatro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuatro);
 
-        lista = (ListView) findViewById(R.id.listView_cursos);
+        lista = (ListView) findViewById(R.id.listView_asignaturas);
         adaptador = new AdaptadorAsignatura(this, GetArrayItems());
         lista.setAdapter(adaptador);
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView adapterView, View view, int posicion, long l) {
+                //Toast.makeText(getApplicationContext(), "posicion " + (i + 1) + personas[i], Toast.LENGTH_SHORT).show();
+                switch (posicion) {
+                    case 0 :
+                        Toast.makeText(getApplicationContext(), "Asignatura 1", Toast.LENGTH_SHORT).show();
+                        mostrarAlumnos(view);
+                        break;
+                    case 1 :
+                        Toast.makeText(getApplicationContext(), "Asignatura 2", Toast.LENGTH_SHORT).show();
+                        mostrarAlumnos(view);
+                        break;
+                    case 2 :
+                        Toast.makeText(getApplicationContext(), "Asignatura 3", Toast.LENGTH_SHORT).show();
+                        mostrarAlumnos(view);
+                        break;
+                    case 3 :
+                        Toast.makeText(getApplicationContext(), "Asignatura 4", Toast.LENGTH_SHORT).show();
+                        mostrarAlumnos(view);
+                        break;
+                    case 4 :
+                        Toast.makeText(getApplicationContext(), "Asignatura 5", Toast.LENGTH_SHORT).show();
+                        mostrarAlumnos(view);
+                        break;
+                    case 5 :
+                        Toast.makeText(getApplicationContext(), "Asignatura 6", Toast.LENGTH_SHORT).show();
+                        mostrarAlumnos(view);
+                        break;
+                    default:
+                        Toast.makeText(getApplicationContext(), "Accion incorrecta", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     private ArrayList<Asignatura> GetArrayItems(){
@@ -36,6 +75,10 @@ public class ActivityCuatro extends AppCompatActivity {
         return listaAsignaturas;
     }
 
+    public void mostrarAlumnos(View view){
+        Intent mostrarAlumnos = new Intent(ActivityCuatro.this, ActivityCinco.class);
+        startActivity(mostrarAlumnos);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

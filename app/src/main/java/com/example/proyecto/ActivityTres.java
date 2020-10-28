@@ -33,17 +33,31 @@ public class ActivityTres extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(), "posicion " + (i + 1) + personas[i], Toast.LENGTH_SHORT).show();
                 switch (posicion) {
                     case 0 :
-                        //Intent mostrarAsignaturas = new Intent(getApplicationContext(), ActivityCuatro.class);
-                        //startActivity(mostrarAsignaturas);
-                        //Toast.makeText(getApplicationContext(), "hola soy pepe", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "DAM 1", Toast.LENGTH_SHORT).show();
                         mostrarAsignaturas(view);
-
-
+                        break;
                     case 1 :
-                        Toast.makeText(getApplicationContext(), "hola soy ramiro", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "DAM 2", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
+                        break;
+                    case 2 :
+                        Toast.makeText(getApplicationContext(), "DAW 1", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
+                        break;
+                    case 3 :
+                        Toast.makeText(getApplicationContext(), "DAW 2", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
+                        break;
+                    case 4 :
+                        Toast.makeText(getApplicationContext(), "ASIR 1", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
+                        break;
+                    case 5 :
+                        Toast.makeText(getApplicationContext(), "ASIR 2", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
                         break;
                     default:
-                        Toast.makeText(getApplicationContext(), "no soy ramiro ni pablo", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Accion incorrecta", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -67,14 +81,8 @@ public class ActivityTres extends AppCompatActivity {
 
 
     public void mostrarAsignaturas(View view){
-        Intent mostrarAsignaturas = new Intent(this, ActivityCuatro.class);
+        Intent mostrarAsignaturas = new Intent(ActivityTres.this, ActivityCuatro.class);
         startActivity(mostrarAsignaturas);
-
-        Toast toastCancelar =
-                Toast.makeText(getApplicationContext(),
-                        "Regreso al inicio", Toast.LENGTH_LONG);
-
-        toastCancelar.show();
     }
 
     @Override

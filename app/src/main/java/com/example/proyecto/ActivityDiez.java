@@ -2,10 +2,14 @@ package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -22,6 +26,41 @@ public class ActivityDiez extends AppCompatActivity {
         lista = (ListView) findViewById(R.id.listView_cursos);
         adaptador = new AdaptadorCurso(this, GetArrayItems());
         lista.setAdapter(adaptador);
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView adapterView, View view, int posicion, long l) {
+                //Toast.makeText(getApplicationContext(), "posicion " + (i + 1) + personas[i], Toast.LENGTH_SHORT).show();
+                switch (posicion) {
+                    case 0 :
+                        Toast.makeText(getApplicationContext(), "Horario DAM 1", Toast.LENGTH_SHORT).show();
+                        mostrarHorario(view);
+                        break;
+                    case 1 :
+                        Toast.makeText(getApplicationContext(), "Horario DAM 2", Toast.LENGTH_SHORT).show();
+                        mostrarHorario(view);
+                        break;
+                    case 2 :
+                        Toast.makeText(getApplicationContext(), "Horario DAW 1", Toast.LENGTH_SHORT).show();
+                        mostrarHorario(view);
+                        break;
+                    case 3 :
+                        Toast.makeText(getApplicationContext(), "Horario DAW 2", Toast.LENGTH_SHORT).show();
+                        mostrarHorario(view);
+                        break;
+                    case 4 :
+                        Toast.makeText(getApplicationContext(), "Horario ASIR 1", Toast.LENGTH_SHORT).show();
+                        mostrarHorario(view);
+                        break;
+                    case 5 :
+                        Toast.makeText(getApplicationContext(), "Horario ASIR 2", Toast.LENGTH_SHORT).show();
+                        mostrarHorario(view);
+                        break;
+                    default:
+                        Toast.makeText(getApplicationContext(), "Accion incorrecta", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     private ArrayList<Curso> GetArrayItems(){
@@ -37,6 +76,10 @@ public class ActivityDiez extends AppCompatActivity {
         return listaCursos;
     }
 
+    public void mostrarHorario(View view){
+        Intent mostrarHorario = new Intent(ActivityDiez.this, ActivityOnce.class);
+        startActivity(mostrarHorario);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

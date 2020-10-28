@@ -4,4 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityDoce"/>
+    tools:context=".ActivityDoce">
+
+    <TextView
+        android:id="@+id/textView_fecha_nacimiento_cuenta"
+        android:layout_width="124dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/textView_fecha_nacimiento_cuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_sexo_cuenta" />
+
+    <TextView
+        android:id="@+id/textView_informacion_fecha_nacimiento_cuenta"
+        android:layout_width="202dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/textView_infomacion_fecha_nacimiento_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_fecha_nacimiento_cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/textView_informacion_sexo_cuenta" />
+
+    <TextView
+        android:id="@+id/textView_nombre_cuenta"
+        android:layout_width="121dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/textView_nombre_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cuenta" />
+
+    <TextView
+        android:id="@+id/textView_informacion_nombre_cuenta"
+        android:layout_width="202dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/textView_informacion_nombre_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_nombre_cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cuenta" />
+
+    <TextView
+        android:id="@+id/textView_informacion_usuario_cuenta"
+        android:layout_width="202dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/textView_informacion_usuario_cuenta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_usuario_cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/textView_informacion_fecha_nacimiento_cuenta"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/textView_informacion_sexo_cuenta"
+        android:layout_width="202dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/textView_informacion_sexo_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/textView_sexo_cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/textView_informacion_apellidos_cuenta" />
+
+    <TextView
+        android:id="@+id/textView_informacion_apellidos_cuenta"
+        android:layout_width="202dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/textView_informacion_apellidos_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/textView_apellidos_cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/textView_informacion_nombre_cuenta" />
+
+    <TextView
+        android:id="@+id/textView_apellidos_cuenta"
+        android:layout_width="121dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textView_apellidos_cuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nombre_cuenta" />
+
+    <TextView
+        android:id="@+id/textView_sexo_cuenta"
+        android:layout_width="121dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/textView_sexo_cuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_apellidos_cuenta" />
+
+    <TextView
+        android:id="@+id/textView_usuario_cuenta"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/textView_usuario_cuenta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fecha_nacimiento_cuenta"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_cuenta"
+        android:layout_width="363dp"
+        android:layout_height="64dp"
+        android:text="@string/textView_informacion_personal_cuenta"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+</androidx.constraintlayout.widget.ConstraintLayout>

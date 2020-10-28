@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_contextual_alumno_modificar"
+        android:title="@string/menu_contextual_alumno_modificar"
+        android:titleCondensed="@string/menu_contextual_alumno_modificar">
+    </item>
+    <item
+        android:id="@+id/menu_contextual_alumno_enviar_email"
+        android:title="@string/menu_contextual_alumno_enviar_email"
+        android:titleCondensed="@string/menu_contextual_alumno_enviar_email">
+    </item>
+    <item
+        android:id="@+id/menu_contextual_alumno_llamar"
+        android:title="@string/menu_contextual_alumno_llamar"
+        android:titleCondensed="@string/menu_contextual_alumno_llamar">
+    </item>
+</menu>

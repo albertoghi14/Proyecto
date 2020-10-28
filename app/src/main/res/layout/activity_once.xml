@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".ActivityOnce">
 
+    <CalendarView
+        android:id="@+id/calendarView_calendario_horario"
+        android:layout_width="328dp"
+        android:layout_height="294dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_foto_horario"
+        android:layout_width="350dp"
+        android:layout_height="518dp"
+        android:layout_marginBottom="252dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/horario" />
 </androidx.constraintlayout.widget.ConstraintLayout>
