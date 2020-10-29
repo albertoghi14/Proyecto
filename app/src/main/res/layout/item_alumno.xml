@@ -14,7 +14,8 @@
         android:id="@+id/imageView_foto_item_alumno"
         android:layout_width="100dp"
         android:layout_height="148dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/descripcion_foto_alumno"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,13 +23,13 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical"
-        android:layout_marginLeft="10dp">
+        android:layout_marginStart="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView_nombre_item_alumno"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/texto_item"/>
 
@@ -36,35 +37,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView_edad_item_alumno"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="@color/texto_item"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView_email_item_alumno"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="@color/texto_item"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView_direccion_item_alumno"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="@color/texto_item"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView_domicilio_item_alumno"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="@color/texto_item"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView_telefono_item_alumno"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="@color/texto_item"/>
 
     </LinearLayout>

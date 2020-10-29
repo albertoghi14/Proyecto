@@ -13,7 +13,6 @@
         android:id="@+id/menu_inicio_asignaturas"
         app:showAsAction="collapseActionView"
         android:title="@string/menu_inicio_asignaturas">
-
     </item>
 
     <item

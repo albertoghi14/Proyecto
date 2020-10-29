@@ -12,7 +12,6 @@
         android:id="@+id/menu_modificar_asignaturas"
         app:showAsAction="collapseActionView"
         android:title="@string/menu_modificar_asignaturas">
-
     </item>
 
     <item

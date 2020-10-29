@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="app_name">Proyecto</string>
 
@@ -8,15 +8,15 @@
     <string name="button_registrarse">Registrarse</string>
 
     <string name="textView_titulo_registrarse">CREAR NUEVA CUENTA</string>
-    <string name="editText_nombre_registrarse">Introduce un nombre...</string>
-    <string name="editText_apellidos_registrar">Introduce tus apellidos...</string>
+    <string name="editText_nombre_registrarse">Introduce un nombre</string>
+    <string name="editText_apellidos_registrar">Introduce tus apellidos</string>
     <string name="checkBox_hombre_registrar">Hombre</string>
     <string name="checkBox_mujer_registrar">Mujer</string>
     <string name="editText_localidad_registrarse">Introduce tu localidad</string>
     <string name="editText_telefono_registrarse">Introduce tu número de teléfono (opcional)</string>
     <string name="editText_usuario_registrar">Introduce un usuario</string>
-    <string name="editText_password_registrar">Introduce una contraseña...</string>
-    <string name="editText_password_registrar_validacion">Introduce de nuevo tu contraseña...</string>
+    <string name="editText_password_registrar">Introduce una contraseña</string>
+    <string name="editText_password_registrar_validacion">Introduce de nuevo tu contraseña</string>
     <string name="button_cancelar_registrar">Cancelar</string>
     <string name="button_crear_registrarse">Crear</string>
     <string name="radioButton_termino_uno">Terminos</string>
@@ -48,9 +48,9 @@
     <string name="menu_eliminar_asignaturas">Eliminar asignatura</string>
     <string name="menu_modificar_asignaturas">Modificar asignatura</string>
 
-    <string name="menu_anadir_profesores">Nuevo profesor</string>
-    <string name="menu_modificar_profesor">Modificar profesor</string>
-    <string name="menu_eliminar_profesor">Eliminar profesor</string>
+    <string name="menu_anadir_profesores" tools:ignore="Typos">Nuevo profesor</string>
+    <string name="menu_modificar_profesor" tools:ignore="Typos">Modificar profesor</string>
+    <string name="menu_eliminar_profesor">Eliminar professor</string>
 
     <string name="menu_anadir_cursos_horarios">Nuevo curso</string>
     <string name="menu_modificar_cursos_horarios">Modificar curso</string>
@@ -76,5 +76,17 @@
 
     <string name="textView_pagina_principal">¡ BIENVENIDO A LA APP !</string>
     <string name="textView_pagina_principl_texto">Bienvenido a la aplicación usuario. Usted acaba de acceder a la apliación . Esta apliación está dirigida para llevar una mejor gestión en el mundo escolar. Como puedes comprobar se trata de un prototipo que no cuenta con todas las funcionalidades finales de la app, así como no cuenta con su aspecto final. Nos gustaría en un futuro que la aplicación presentase una apariencia más atractiva. De la misma forma, desde nuesra organización nos gustaría hacer que esta aplicación estuviera dirigida a dos tipos de usuario. En primer lugar y como se puede ver en este prototipo la aplicación irá dirigida a los profesores o docentes de centros escolares, de secundaria, etc. Sin embargo, nos gustaría diseñar otra versión que iría dirigida a los estudiantes, mediante la cual podrían gestionar funciones que les podrian resultar interesantes, como llevar un control de las tareas realizadas, un control de sus notas, tener una agenda o funciones del tipo. Esperamos que esta primera versión (primer prototipo) os permita haceros una idea del proyecto que tenemos entre manos.</string>
+
+    <string name="descripcion_foto_profesor" tools:ignore="Typos">Foto del profesor</string>
+    <string name="descripcion_foto_alumno">Foto del alumno</string>
+    <string name="descripcion_foto_horario">Horario</string>
+    <string name="descripcion_foto_inicio">Logo de la app</string>
+
+    <string name="textView_siglas_curso">Siglas curso</string>
+    <string name="textView_descripcion_curso">Descripcion curso</string>
+    <string name="textView_siglas_asignatura">Siglas asignatura</string>
+    <string name="textView_descripcion_asignatura">Descripcion asignatura</string>
+    <string name="textView_aula_asignatura">Aula asignatura</string>
+
 
 </resources>

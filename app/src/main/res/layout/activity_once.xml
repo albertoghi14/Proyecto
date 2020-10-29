@@ -26,5 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/horario" />
+        app:srcCompat="@drawable/horario"
+        android:contentDescription="@string/descripcion_foto_horario"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

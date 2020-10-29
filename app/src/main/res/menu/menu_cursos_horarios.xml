@@ -12,7 +12,6 @@
         android:id="@+id/menu_modificar_cursos_horarios"
         app:showAsAction="collapseActionView"
         android:title="@string/menu_modificar_cursos_horarios">
-
     </item>
 
     <item

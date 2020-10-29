@@ -25,7 +25,7 @@
                 android:text="@string/textView_titulo_registrarse"
                 android:textColor="@color/colorPrimary"
                 android:textAlignment="center"
-                android:textSize="30dp" />
+                android:textSize="30sp" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName2"
@@ -97,7 +97,7 @@
                         android:id="@+id/spinner_dia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1" />
 
@@ -115,7 +115,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginEnd="30dp"
                         android:layout_weight="1" />
 
                 </LinearLayout>
@@ -221,9 +221,9 @@
                         android:id="@+id/button2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_weight="1"
                         android:onClick="Cancelar"
                         android:text="@string/button_cancelar_registrar" />
@@ -232,9 +232,9 @@
                         android:id="@+id/button3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginEnd="30dp"
                         android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:onClick="Entrar"
