@@ -1,0 +1,92 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Proyect</string>
+
+    <string name="editText_usuario_iniciar_sesion">User</string>
+    <string name="editText_password_iniciar_sesion">Password</string>
+    <string name="button_iniciar_sesion">Login</string>
+    <string name="button_registrarse">Sign in</string>
+
+    <string name="textView_titulo_registrarse">CREATE A NEW ACCOUNT</string>
+    <string name="editText_nombre_registrarse">Insert your first name</string>
+    <string name="editText_apellidos_registrar">Insert your last name</string>
+    <string name="checkBox_hombre_registrar">Man</string>
+    <string name="checkBox_mujer_registrar">Woman</string>
+    <string name="editText_localidad_registrarse">Insert your city</string>
+    <string name="editText_telefono_registrarse">Insert your phone number (optional)</string>
+    <string name="editText_usuario_registrar">Insert an username</string>
+    <string name="editText_password_registrar">Insert a password</string>
+    <string name="editText_password_registrar_validacion">Insert your password again</string>
+    <string name="button_cancelar_registrar">Cancel</string>
+    <string name="button_crear_registrarse">Create</string>
+    <string name="radioButton_termino_uno">Terms and conditions</string>
+    <string name="radioButton_termino_dos">Terms and conditions</string>
+    <string name="textView_fecha_nacimiento_registrar">Birthdate:</string>
+    <string name="textView_nacionalidad_registrar">Nacionality:</string>
+
+    <string name="menu_inicio">Home</string>
+    <string name="menu_inicio_asignaturas">Subjects</string>
+    <string name="menu_inicio_profesores">Teachers</string>
+    <string name="menu_inicio_horario">Timetable</string>
+    <string name="menu_inicio_cuenta">Account</string>
+
+    <string name="menu__opciones_cuenta_configuracion">Settings</string>
+    <string name="menu__opciones_cuenta_cerrar_sesion">Logout</string>
+
+    <string name="menu_anadir_cursos_asignaturas">New course</string>
+    <string name="menu_modificar_cursos_asignaturas">Modify course</string>
+    <string name="menu_eliminar_cursos_asignaturas">Delete course</string>
+
+    <string name="menu_anadir_alumno">New alumn</string>
+    <string name="menu_eliminar_alumno">Delete alumn</string>
+
+    <string name="menu_anadir_cursos_profesores">New course</string>
+    <string name="menu_modificar_cursos_profesores">Modify course</string>
+    <string name="menu_eliminar_cursos_profesores">Delete course</string>
+
+    <string name="menu_anadir_asignaturas">New subject</string>
+    <string name="menu_eliminar_asignaturas">Delete subject</string>
+    <string name="menu_modificar_asignaturas">Modify subject</string>
+
+    <string name="menu_anadir_profesores" tools:ignore="Typos">New teacher</string>
+    <string name="menu_modificar_profesor" tools:ignore="Typos">Modify teacher</string>
+    <string name="menu_eliminar_profesor" tools:ignore="Typos">Delete teacher</string>
+
+    <string name="menu_anadir_cursos_horarios">New course</string>
+    <string name="menu_modificar_cursos_horarios">Modify course</string>
+    <string name="menu_eliminar_cursos_horarios">Delete course</string>
+
+    <string name="opcionSi">Exit</string>
+    <string name="opcionNo">Cancel</string>
+    <string name="mensajeSeguroSalir">If you click on exit button you\'ll be logout. Are you sure that you want to leave?</string>
+    <string name="textView_informacion_personal_cuenta">Personal information</string>
+    <string name="textView_nombre_cuenta">First name</string>
+    <string name="textView_apellidos_cuenta">Last name</string>
+    <string name="textView_fecha_nacimiento_cuenta">Birthday</string>
+    <string name="textView_usuario_cuenta">Username</string>
+    <string name="textView_sexo_cuenta">Gender</string>
+    <string name="textView_informacion_nombre_cuenta">Name client</string>
+    <string name="textView_informacion_apellidos_cuenta">Last name </string>
+    <string name="textView_informacion_sexo_cuenta">Gender choosed</string>
+    <string name="textView_infomacion_fecha_nacimiento_cuenta">16/07/1994</string>
+    <string name="textView_informacion_usuario_cuenta">Username</string>
+    <string name="menu_contextual_alumno_modificar">Modify alumn</string>
+    <string name="menu_contextual_alumno_enviar_email">Send email</string>
+    <string name="menu_contextual_alumno_llamar">Call</string>
+
+    <string name="textView_pagina_principal">¡ WELCOME TO THE APP !</string>
+    <string name="textView_pagina_principl_texto">Welcome to this app. You\'ve already entered to the app. This application is made for better experience on the education manage. As you see this app is a prototype which doesn\'t have nor all his funcionalities nor his final design. We hope in the future the application appearance will be prettier than now. On this way, our organization would like to direct our product to two different kind os users. Firstly, as you can se this protoctype is made for teachers. In spite of this fact, we would design a new version of our app made for students due to they also want to manage their marks, their chores, etc. We hope this first version ( a protoctype) let you imagin and kwnow more about our proyect.</string>
+
+    <string name="descripcion_foto_profesor" tools:ignore="Typos">Teacher picture</string>
+    <string name="descripcion_foto_alumno">Alumn picture</string>
+    <string name="descripcion_foto_horario">Timetable</string>
+    <string name="descripcion_foto_inicio">App logo</string>
+
+    <string name="textView_siglas_curso">Acronym course</string>
+    <string name="textView_descripcion_curso">Course description</string>
+    <string name="textView_siglas_asignatura">Acronym subject</string>
+    <string name="textView_descripcion_asignatura">Subject description</string>
+    <string name="textView_aula_asignatura">Classroom</string>
+
+
+</resources>
