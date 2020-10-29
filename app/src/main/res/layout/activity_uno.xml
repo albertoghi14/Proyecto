@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_fondo"
+    android:orientation="vertical"
     tools:context=".ActivityUno">
 
 
@@ -22,6 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="@string/textView_titulo_registrarse"
+                android:textColor="@color/colorPrimary"
                 android:textAlignment="center"
                 android:textSize="30dp" />
 
@@ -73,18 +75,18 @@
             </LinearLayout>
 
             <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/textView_fecha_nacimiento_registrar" />
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/textView_fecha_nacimiento_registrar" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -92,7 +94,7 @@
                     android:orientation="horizontal">
 
                     <Spinner
-                        android:id="@+id/spinner"
+                        android:id="@+id/spinner_dia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
@@ -100,7 +102,7 @@
                         android:layout_weight="1" />
 
                     <Spinner
-                        android:id="@+id/spinner2"
+                        android:id="@+id/spinner_mes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -109,7 +111,7 @@
                         android:layout_weight="1" />
 
                     <Spinner
-                        android:id="@+id/spinner3"
+                        android:id="@+id/spinner_ano"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -135,7 +137,7 @@
                     android:text="@string/textView_nacionalidad_registrar" />
 
                 <Spinner
-                    android:id="@+id/spinner4"
+                    android:id="@+id/spinner_pais"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"

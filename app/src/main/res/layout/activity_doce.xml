@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_fondo"
     tools:context=".ActivityDoce">
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_marginEnd="24dp"
         android:text="@string/textView_infomacion_fecha_nacimiento_cuenta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView_fecha_nacimiento_cuenta"
         app:layout_constraintTop_toBottomOf="@+id/textView_informacion_sexo_cuenta" />
 
@@ -62,7 +63,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView_usuario_cuenta"
         app:layout_constraintTop_toBottomOf="@+id/textView_informacion_fecha_nacimiento_cuenta"
-        app:layout_constraintVertical_bias="0.021" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/textView_informacion_sexo_cuenta"
@@ -122,11 +123,12 @@
 
     <TextView
         android:id="@+id/textView_cuenta"
-        android:layout_width="363dp"
-        android:layout_height="64dp"
+        android:layout_width="338dp"
+        android:layout_height="103dp"
         android:text="@string/textView_informacion_personal_cuenta"
         android:textAlignment="center"
-        android:textSize="35dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

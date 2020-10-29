@@ -3,25 +3,34 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_fondo"
     android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:background="@color/colorPrimary"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView_siglas_curso"
             android:layout_width="202dp"
             android:layout_height="42dp"
-            android:text="TextView" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/texto_item"/>
 
         <TextView
             android:id="@+id/textView_descripcion_curso"
             android:layout_width="358dp"
             android:layout_height="35dp"
-            android:text="TextView" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="TextView"
+            android:textColor="@color/texto_item"/>
     </LinearLayout>
 
 </LinearLayout>

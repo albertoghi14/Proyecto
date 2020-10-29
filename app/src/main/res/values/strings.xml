@@ -1,10 +1,12 @@
 <resources>
+
     <string name="app_name">Proyecto</string>
 
     <string name="editText_usuario_iniciar_sesion">Usuario</string>
     <string name="editText_password_iniciar_sesion">Contraseña</string>
     <string name="button_iniciar_sesion">Iniciar Sesión</string>
     <string name="button_registrarse">Registrarse</string>
+
     <string name="textView_titulo_registrarse">CREAR NUEVA CUENTA</string>
     <string name="editText_nombre_registrarse">Introduce un nombre...</string>
     <string name="editText_apellidos_registrar">Introduce tus apellidos...</string>
@@ -21,27 +23,39 @@
     <string name="radioButton_termino_dos">Terminos 2</string>
     <string name="textView_fecha_nacimiento_registrar">Fecha de nacimiento:</string>
     <string name="textView_nacionalidad_registrar">Nacionalidad:</string>
+
     <string name="menu_inicio">Inicio</string>
     <string name="menu_inicio_asignaturas">Asignaturas</string>
     <string name="menu_inicio_profesores">Profesores</string>
     <string name="menu_inicio_horario">Horario</string>
     <string name="menu_inicio_cuenta">Cuenta</string>
+
     <string name="menu__opciones_cuenta_configuracion">Configuración</string>
     <string name="menu__opciones_cuenta_cerrar_sesion">Cerrar sesión</string>
+
     <string name="menu_anadir_cursos_asignaturas">Nuevo curso</string>
     <string name="menu_modificar_cursos_asignaturas">Modificar curso</string>
     <string name="menu_eliminar_cursos_asignaturas">Eliminar curso</string>
+
+    <string name="menu_anadir_alumno">Nuevo alumno</string>
+    <string name="menu_eliminar_alumno">Eliminar alumno</string>
+
     <string name="menu_anadir_cursos_profesores">Nuevo curso</string>
     <string name="menu_modificar_cursos_profesores">Modificar curso</string>
     <string name="menu_eliminar_cursos_profesores">Eliminar curso</string>
+
     <string name="menu_anadir_asignaturas">Nueva asignatura</string>
     <string name="menu_eliminar_asignaturas">Eliminar asignatura</string>
+    <string name="menu_modificar_asignaturas">Modificar asignatura</string>
+
     <string name="menu_anadir_profesores">Nuevo profesor</string>
     <string name="menu_modificar_profesor">Modificar profesor</string>
     <string name="menu_eliminar_profesor">Eliminar profesor</string>
+
     <string name="menu_anadir_cursos_horarios">Nuevo curso</string>
     <string name="menu_modificar_cursos_horarios">Modificar curso</string>
     <string name="menu_eliminar_cursos_horarios">Eliminar curso</string>
+
     <string name="opcionSi">Salir</string>
     <string name="opcionNo">Cancelar</string>
     <string name="mensajeSeguroSalir">Si pulsa el botón salir su sesión se cerrará para dicha aplicación. ¿Desea salir de la sesión?</string>
@@ -56,10 +70,11 @@
     <string name="textView_informacion_sexo_cuenta">Sexo escogido</string>
     <string name="textView_infomacion_fecha_nacimiento_cuenta">16/07/1994</string>
     <string name="textView_informacion_usuario_cuenta">Nombre de usuario</string>
-    <string name="menu_anadir_alumno">Nuevo alumno</string>
-    <string name="menu_eliminar_alumno">Eliminar alumno</string>
     <string name="menu_contextual_alumno_modificar">Modificar alumno</string>
     <string name="menu_contextual_alumno_enviar_email">Enviar email</string>
     <string name="menu_contextual_alumno_llamar">Llamar</string>
+
+    <string name="textView_pagina_principal">¡ BIENVENIDO A LA APP !</string>
+    <string name="textView_pagina_principl_texto">Bienvenido a la aplicación usuario. Usted acaba de acceder a la apliación . Esta apliación está dirigida para llevar una mejor gestión en el mundo escolar. Como puedes comprobar se trata de un prototipo que no cuenta con todas las funcionalidades finales de la app, así como no cuenta con su aspecto final. Nos gustaría en un futuro que la aplicación presentase una apariencia más atractiva. De la misma forma, desde nuesra organización nos gustaría hacer que esta aplicación estuviera dirigida a dos tipos de usuario. En primer lugar y como se puede ver en este prototipo la aplicación irá dirigida a los profesores o docentes de centros escolares, de secundaria, etc. Sin embargo, nos gustaría diseñar otra versión que iría dirigida a los estudiantes, mediante la cual podrían gestionar funciones que les podrian resultar interesantes, como llevar un control de las tareas realizadas, un control de sus notas, tener una agenda o funciones del tipo. Esperamos que esta primera versión (primer prototipo) os permita haceros una idea del proyecto que tenemos entre manos.</string>
 
 </resources>
