@@ -19,8 +19,8 @@
     <string name="editText_password_registrar_validacion">Introduce de nuevo tu contraseña</string>
     <string name="button_cancelar_registrar">Cancelar</string>
     <string name="button_crear_registrarse">Crear</string>
-    <string name="radioButton_termino_uno">Terminos</string>
-    <string name="radioButton_termino_dos">Terminos 2</string>
+    <string name="radioButton_termino_uno">Terminos y condiciones</string>
+    <string name="radioButton_termino_dos">Terminos y condiciones</string>
     <string name="textView_fecha_nacimiento_registrar">Fecha de nacimiento:</string>
     <string name="textView_nacionalidad_registrar">Nacionalidad:</string>
 
