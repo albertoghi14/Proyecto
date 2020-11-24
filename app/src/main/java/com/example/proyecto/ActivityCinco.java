@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.proyecto.entidades.Alumno;
+
 import java.util.ArrayList;
 
 public class ActivityCinco extends AppCompatActivity {
@@ -61,9 +63,13 @@ public class ActivityCinco extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_alumno:
+                Intent anadirAlumno = new Intent(ActivityCinco.this, AnadirAlumno.class);
+                startActivity(anadirAlumno);
                 return true;
 
             case R.id.menu_eliminar_alumno:
+                Intent borrarAlumno = new Intent(ActivityCinco.this, BorrarAlumno.class);
+                startActivity(borrarAlumno);
                 return true;
 
             default:
@@ -85,6 +91,8 @@ public class ActivityCinco extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.menu_contextual_alumno_modificar:
+                Intent modificarAlumno = new Intent(ActivityCinco.this, ModificarAlumno.class);
+                startActivity(modificarAlumno);
                 return true;
             case R.id.menu_contextual_alumno_enviar_email:
                 return true;

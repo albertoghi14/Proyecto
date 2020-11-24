@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewTituloRegistrarUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -28,7 +28,7 @@
                 android:textSize="30sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/editTextNombreUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -39,7 +39,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextApellidosUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -58,7 +58,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBoxSexoHombre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -66,7 +66,7 @@
                     android:hint="@string/checkBox_hombre_registrar" />
 
                 <CheckBox
-                    android:id="@+id/checkBox2"
+                    android:id="@+id/checkBoxSexoMujer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -80,7 +80,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/textViewFechaNacimientoUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -94,7 +94,7 @@
                     android:orientation="horizontal">
 
                     <Spinner
-                        android:id="@+id/spinner_dia"
+                        android:id="@+id/spinnerDiaUsuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
@@ -102,7 +102,7 @@
                         android:layout_weight="1" />
 
                     <Spinner
-                        android:id="@+id/spinner_mes"
+                        android:id="@+id/spinnerMesUsuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -111,7 +111,7 @@
                         android:layout_weight="1" />
 
                     <Spinner
-                        android:id="@+id/spinner_ano"
+                        android:id="@+id/spinnerAnoUsuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -137,7 +137,7 @@
                     android:text="@string/textView_nacionalidad_registrar" />
 
                 <Spinner
-                    android:id="@+id/spinner_pais"
+                    android:id="@+id/spinnerNacionalidadUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -145,7 +145,7 @@
                     android:layout_marginRight="30dp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/editTextLocalidadUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -156,7 +156,7 @@
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editTextPhone"
+                    android:id="@+id/editTextTelefonoUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -166,7 +166,7 @@
                     android:inputType="phone" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName4"
+                    android:id="@+id/editTextUsernameUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -176,7 +176,17 @@
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/editTextEmailUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+                    android:hint="@string/editText_email_usuario"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/editTextPasswordUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -186,7 +196,7 @@
                     android:inputType="textPassword" />
 
                 <EditText
-                    android:id="@+id/editTextTextPassword2"
+                    android:id="@+id/editTextPasswordConfirmarUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -196,7 +206,7 @@
                     android:inputType="textPassword" />
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radioButtonTerminosUno"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
@@ -205,7 +215,7 @@
                     android:text="@string/radioButton_termino_uno" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radioButtonTerminosDos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
@@ -218,7 +228,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/buttonCancelarRegistrarUsuario"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
@@ -229,7 +239,7 @@
                         android:text="@string/button_cancelar_registrar" />
 
                     <Button
-                        android:id="@+id/button3"
+                        android:id="@+id/buttonRegistrarUsuario"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
@@ -237,7 +247,7 @@
                         android:layout_marginEnd="30dp"
                         android:layout_marginBottom="10dp"
                         android:layout_weight="1"
-                        android:onClick="Entrar"
+                        android:onClick="Crear"
                         android:text="@string/button_crear_registrarse" />
                 </LinearLayout>
 

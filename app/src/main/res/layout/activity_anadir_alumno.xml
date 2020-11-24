@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnadirAlumno">
+
+    <Button
+        android:id="@+id/buttonAnadirAlumno"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/button_anadir_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirTelefonoAlumno" />
+
+    <Button
+        android:id="@+id/buttonCancelarAnadirAlumno"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/button_cancelar_anadir_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnadirAlumno" />
+
+    <EditText
+        android:id="@+id/editTextAnadirNombreAlumno"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_anadir_nombre_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloAnadirAlumno" />
+
+    <EditText
+        android:id="@+id/editTextAnadirEdadAlumno"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_anadir_edad_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirNombreAlumno" />
+
+    <EditText
+        android:id="@+id/editTextAnadirTelefonoAlumno"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_anadir_telefono_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirLocalidadAlumno" />
+
+    <EditText
+        android:id="@+id/editTextAnadirEmailAlumno"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/editText_anadir_email_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirEdadAlumno" />
+
+    <EditText
+        android:id="@+id/editTextDomicilioAlumno"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_anadir_domicilio_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirEmailAlumno" />
+
+    <EditText
+        android:id="@+id/editTextAnadirLocalidadAlumno"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_anadir_localidad_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDomicilioAlumno" />
+
+    <TextView
+        android:id="@+id/textViewTituloAnadirAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/textView_titulo_anadir_alumno"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

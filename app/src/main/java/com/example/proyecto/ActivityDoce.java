@@ -28,7 +28,8 @@ public class ActivityDoce extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_opciones_cuenta_configuracion:
-
+                Intent configuracionCuenta = new Intent(ActivityDoce.this, ModificarUsuario.class);
+                startActivity(configuracionCuenta);
                 return true;
 
             case R.id.menu_opciones_cuenta_cerrar_sesion:

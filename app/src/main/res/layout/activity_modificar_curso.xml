@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificarCurso">
+
+    <Button
+        android:id="@+id/buttonModificarCurso"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/button_modificar_curso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificarDescripcionCurso" />
+
+    <Button
+        android:id="@+id/buttonCancelarModificarCurso"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_cancelar_modificar_curso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModificarCurso" />
+
+    <EditText
+        android:id="@+id/editTextModificarSiglasCurso"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_modificar_siglas_curso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerModificarCurso" />
+
+    <EditText
+        android:id="@+id/editTextModificarDescripcionCurso"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_modificar_descripcion_curso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModificarSiglasCurso" />
+
+    <Spinner
+        android:id="@+id/spinnerModificarCurso"
+        android:layout_width="311dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloModificarCurso" />
+
+    <TextView
+        android:id="@+id/textViewTituloModificarCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViex_titulo_modificar_curso"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+</androidx.constraintlayout.widget.ConstraintLayout>

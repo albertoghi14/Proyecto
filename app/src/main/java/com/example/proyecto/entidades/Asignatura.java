@@ -1,7 +1,6 @@
-package com.example.proyecto;
+package com.example.proyecto.entidades;
 
 public class Asignatura {
-
     private String siglasAsignatura;
     private String descripcionAsignatura;
     private String aulaAsignatura;
@@ -19,11 +18,23 @@ public class Asignatura {
         return siglasAsignatura;
     }
 
+    public void setSiglasAsignatura(String siglasAsignatura) {
+        this.siglasAsignatura = siglasAsignatura;
+    }
+
     public String getDescripcionAsignatura() {
         return descripcionAsignatura;
     }
 
+    public void setDescripcionAsignatura(String descripcionAsignatura) {
+        this.descripcionAsignatura = descripcionAsignatura;
+    }
+
     public String getAulaAsignatura() {
         return aulaAsignatura;
+    }
+
+    public void setAulaAsignatura(String aulaAsignatura) {
+        this.aulaAsignatura = aulaAsignatura;
     }
 }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnadirProfesor">
+
+    <Button
+        android:id="@+id/buttonCancelarAnadirProfesor"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_cancelar_anadir_profesor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnadirProfesor" />
+
+    <Button
+        android:id="@+id/buttonAnadirProfesor"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/button_anadir_profesor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirTelefonoProfesor" />
+
+    <EditText
+        android:id="@+id/editTextAnadirNombreProfesor"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_anadir_nombre_profesor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloAnadirProfesor" />
+
+    <EditText
+        android:id="@+id/editTextAnadirAsignaturaProfesor"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_anadir_asignatura_profesor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirNombreProfesor" />
+
+    <EditText
+        android:id="@+id/editTextAnadirTelefonoProfesor"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editText_anadir_telefono_profesor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirEmailProfesor" />
+
+    <EditText
+        android:id="@+id/editTextAnadirEmailProfesor"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/editText_anadir_email_profesor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirAsignaturaProfesor" />
+
+    <TextView
+        android:id="@+id/textViewTituloAnadirProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/textView_titulo_anadir_profesor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,13 @@ package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
+
+import com.example.proyecto.entidades.Asignatura;
 
 import java.util.ArrayList;
 
@@ -48,14 +51,18 @@ public class ActivityTrece extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_asignaturas:
+                Intent anadirAsignatura = new Intent(ActivityTrece.this, AnadirAsignatura.class);
+                startActivity(anadirAsignatura);
                 return true;
 
             case R.id.menu_modificar_asignaturas:
-
+                Intent modificarAsignatura = new Intent(ActivityTrece.this, ModificarAsignatura.class);
+                startActivity(modificarAsignatura);
                 return true;
 
             case R.id.menu_eliminar_asignaturas:
-
+                Intent borrarAsignatura = new Intent(ActivityTrece.this, BorrarAsignatura.class);
+                startActivity(borrarAsignatura);
                 return true;
 
             default:

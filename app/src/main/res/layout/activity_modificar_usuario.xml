@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModificarUsuario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewTituloModificarUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViex_titulo_modificar_usuario"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.025" />
+
+            <EditText
+                android:id="@+id/editTextModificarNombreUsuario"
+                android:layout_width="302dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/editText_modificar_nombre_usuario"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="150dp" />
+
+            <EditText
+                android:id="@+id/editTextModificarApellidosUsuario"
+                android:layout_width="302dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/editText_modificar_apellidos_usuario"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="90dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxSexoHombreModificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/checkBox_modificar_hombre_usuario" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxSexoMujerModificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/checkBox_modificar_mujer_usuario" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerDiaUsuarioModificar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:id="@+id/spinnerMesModificarUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:id="@+id/spinnerAnoModificarUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerNacionalidadModificarUsuario"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextUsernameModificarUsuario"
+                    android:layout_width="302dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/editText_modificar_username_usuario"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="362dp" />
+
+                <EditText
+                    android:id="@+id/editTextEmailModificarUsuario"
+                    android:layout_width="302dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:text="@string/editText_email_modificar_usuario"
+                    tools:layout_editor_absoluteX="45dp"
+                    tools:layout_editor_absoluteY="449dp" />
+
+                <EditText
+                    android:id="@+id/editTextTelefonoModificarUsuario"
+                    android:layout_width="302dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/editText_telefono_modificar_usuario"
+                    tools:layout_editor_absoluteX="45dp"
+                    tools:layout_editor_absoluteY="598dp" />
+
+                <EditText
+                    android:id="@+id/editTextTextLocalidadModificarUsuario"
+                    android:layout_width="302dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/editText_localidad_modificar_usuario"
+                    tools:layout_editor_absoluteX="45dp"
+                    tools:layout_editor_absoluteY="534dp" />
+
+                <Button
+                    android:id="@+id/buttonModificarUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="80dp"
+                    android:onClick="Modificar"
+                    android:text="@string/button_modificar_usuario" />
+
+                <Button
+                    android:id="@+id/buttonCancelarModificarUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:onClick="Cancelar"
+                    android:text="@string/button_cancelar_modificar_usuario" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

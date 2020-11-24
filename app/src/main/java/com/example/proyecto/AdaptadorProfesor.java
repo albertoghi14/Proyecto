@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.proyecto.entidades.Profesor;
+
 import java.util.ArrayList;
 
 public class AdaptadorProfesor extends BaseAdapter {
@@ -47,9 +49,9 @@ public class AdaptadorProfesor extends BaseAdapter {
         TextView telefono = (TextView) convertView.findViewById(R.id.textView_telefono_item_profesor);
 
         foto.setImageResource(profesor.getFoto());
-        nombre.setText(profesor.getNombre());
+        nombre.setText(profesor.getNombreProfesor());
         asignaturas.setText(profesor.getAsignaturas());
-        email.setText(profesor.getEmail());
+        email.setText(profesor.getEmailProfesor());
         telefono.setText(profesor.getTelefono());
 
         return convertView;

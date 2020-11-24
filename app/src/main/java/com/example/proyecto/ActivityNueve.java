@@ -2,10 +2,13 @@ package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
+
+import com.example.proyecto.entidades.Profesor;
 
 import java.util.ArrayList;
 
@@ -49,14 +52,18 @@ public class ActivityNueve extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_profesores:
+                Intent anadirProfesor = new Intent(ActivityNueve.this, AnadirProfesor.class);
+                startActivity(anadirProfesor);
                 return true;
 
             case R.id.menu_modificar_profesor:
-
+                Intent modificarProfesor = new Intent(ActivityNueve.this, ModificarProfesor.class);
+                startActivity(modificarProfesor);
                 return true;
 
             case R.id.menu_eliminar_profesor:
-
+                Intent borrarProfesor = new Intent(ActivityNueve.this, BorrarProfesor.class);
+                startActivity(borrarProfesor);
                 return true;
 
             default:

@@ -70,6 +70,10 @@
     <string name="textView_informacion_sexo_cuenta">Sexo escogido</string>
     <string name="textView_infomacion_fecha_nacimiento_cuenta">16/07/1994</string>
     <string name="textView_informacion_usuario_cuenta">Nombre de usuario</string>
+    <string name="textView_email_usuario_cuenta">Email</string>
+    <string name="textView_telefono_usuario_cuenta">Teléfono</string>
+    <string name="textView_nacionalidad_usuario_cuenta">Nacionalidad</string>
+    <string name="textView_localidad_usuario_cuenta">Localidad</string>
     <string name="menu_contextual_alumno_modificar">Modificar alumno</string>
     <string name="menu_contextual_alumno_enviar_email">Enviar email</string>
     <string name="menu_contextual_alumno_llamar">Llamar</string>
@@ -88,5 +92,95 @@
     <string name="textView_descripcion_asignatura">Descripcion asignatura</string>
     <string name="textView_aula_asignatura">Aula asignatura</string>
 
+    <string name="textViex_titulo_anadir_curso">NUEVO CURSO</string>
+    <string name="editText_anadir_siglas_curso">Introduce las siglas del curso</string>
+    <string name="editText_anadir_descripcion_curso">Introduce el curso completo</string>
+    <string name="button_anadir_curso">AÑADIR</string>
+    <string name="button_cancelar_anadir_curso">CANCELAR</string>
 
+    <string name="textView_titulo_anadir_asignatura">NUEVA ASIGNATURA</string>
+    <string name="editText_anadir_siglas_asignatura">Introduce las siglas de la asignatura</string>
+    <string name="editText_anadir_descripcion_asignatura">Introduce la asignatura completa</string>
+    <string name="editText_anadir_aula_asignatura">Introduce el aula de la asignatura</string>
+    <string name="button_anadir_asignatura">AÑADIR</string>
+    <string name="button_cancelar_anadir_asignatura">CANCELAR</string>
+
+    <string name="textView_titulo_anadir_alumno">NUEVO ALUMNO</string>
+    <string name="editText_anadir_nombre_alumno">Introduce el nombre del alumno</string>
+    <string name="editText_anadir_edad_alumno">Introduce la edad</string>
+    <string name="editText_anadir_email_alumno">Introduce el email</string>
+    <string name="editText_anadir_domicilio_alumno">Introduce la dirección</string>
+    <string name="editText_anadir_localidad_alumno">Introduce la localidad</string>
+    <string name="editText_anadir_telefono_alumno">Introduce el teléfono</string>
+    <string name="button_anadir_alumno">AÑADIR</string>
+    <string name="button_cancelar_anadir_alumno">CANCELAR</string>
+
+    <string name="textView_titulo_anadir_profesor">NUEVO PROFESOR</string>
+    <string name="editText_anadir_nombre_profesor">Introduce el nombre del profesor</string>
+    <string name="editText_anadir_asignatura_profesor">Introduce la asignatura</string>
+    <string name="editText_anadir_email_profesor">Introduce el email</string>
+    <string name="editText_anadir_telefono_profesor">Introduce el teléfono</string>
+    <string name="button_anadir_profesor">AÑADIR</string>
+    <string name="button_cancelar_anadir_profesor">CANCELAR</string>
+
+    <string name="textViex_titulo_borrar_alumno">BORRAR ALUMNO</string>
+    <string name="button_borrar_alumno">BORRAR</string>
+    <string name="button_cancelar_borrar_alumno">CANCELAR</string>
+
+    <string name="textViex_titulo_borrar_asignatura">BORRAR ASIGNATURA</string>
+    <string name="button_borrr_asignatura">BORRAR</string>
+    <string name="button_cancelar_borrar_asignatura">CANCELAR</string>
+
+    <string name="textViex_titulo_borrar_curso">BORRAR CURSO</string>
+    <string name="button_borrar_curso">BORRAR</string>
+    <string name="button_cancelar_borrar_curso">CANCELAR</string>
+
+    <string name="textViex_titulo_borrar_profesor">BORRAR PROFESOR</string>
+    <string name="button_borrar_profesor">BORRAR</string>
+    <string name="button_cancelar_borrar_profesor">CANCELAR</string>
+
+    <string name="textViex_titulo_modificar_alumno">MODIFICAR ALUMNO</string>
+    <string name="editText_modificar_nombre_alumno">Introduce el nuevo nombre</string>
+    <string name="editText_modificar_edad_alumno">Introduce la nueva edad</string>
+    <string name="editText_modificar_email_alumno">Introduce el nuevo email</string>
+    <string name="editText_modificar_domicilio_alumno">Introduce el nuevo domicilio</string>
+    <string name="editText_modificar_localidad_alumno">Introduce la nueva localidad</string>
+    <string name="editText_amodificar_telefono_alumno">Introduce el nuevo telefono</string>
+    <string name="button_modificarAlumno">MODIFICAR</string>
+    <string name="button_cancelar_modificar_alumno">CANCELAR</string>
+
+    <string name="textViex_titulo_modificar_asignatura">MODIFICAR ASIGNATURA</string>
+    <string name="editText_modificar_siglas_asignatura">Introduce las nuevas siglas</string>
+    <string name="editText_modificar_descripcion_asignatura">Introduce la nueva descripcion</string>
+    <string name="editText_modificar_aula_asignatura">Introduce el nuevo aula</string>
+    <string name="button_modificar_asignatura">MODIFICAR</string>
+    <string name="button_cancelar_modificar_asignatura">CANCELAR</string>
+
+    <string name="textViex_titulo_modificar_curso">MODIFICAR CURSO</string>
+    <string name="editText_modificar_siglas_curso">Introduce las nuevas siglas</string>
+    <string name="editText_modificar_descripcion_curso">Introduce la nueva descripcion</string>
+    <string name="button_modificar_curso">MODIFICAR</string>
+    <string name="button_cancelar_modificar_curso">CANCELAR</string>
+
+    <string name="textViex_titulo_modificar_profesor">MODIFICAR PROFESOR</string>
+    <string name="editText_modificar_nombre_profesor">Introduce el nuevo nombre</string>
+    <string name="editText_modificar_asignatura_profesor">Introduce la nueva asignatura</string>
+    <string name="editText_modificar_email_profesor">Introdcue el nuevo email</string>
+    <string name="editText_modificar_telefono_profesor">Introduce el nuevo telefono</string>
+    <string name="button_modificar_telefono_profesor">MODIFICAR</string>
+    <string name="button_cancelar_modificar_telefono_profesor">CANCELAR</string>
+
+    <string name="textViex_titulo_modificar_usuario">MODIFICAR DATOS DE LA CUENTA</string>
+    <string name="editText_modificar_nombre_usuario">Introduce el nuevo nombre</string>
+    <string name="editText_modificar_apellidos_usuario">Introduce los nuevos apellidos</string>
+    <string name="editText_modificar_username_usuario">Introduce un nuevo username</string>
+    <string name="editText_email_modificar_usuario">Introduce el nuevo email</string>
+    <string name="editText_telefono_modificar_usuario">Introduce el nuevo teléfono</string>
+    <string name="editText_localidad_modificar_usuario">Introduce la nueva localidad</string>
+    <string name="checkBox_modificar_hombre_usuario">Hombre</string>
+    <string name="checkBox_modificar_mujer_usuario">Mujer</string>
+    <string name="button_cancelar_modificar_usuario">CANCELAR</string>
+    <string name="button_modificar_usuario">MODIFICAR</string>
+
+    <string name="editText_email_usuario">Introduce un email</string>
 </resources>

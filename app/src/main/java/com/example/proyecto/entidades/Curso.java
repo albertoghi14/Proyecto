@@ -1,4 +1,4 @@
-package com.example.proyecto;
+package com.example.proyecto.entidades;
 
 public class Curso {
     private String siglasCurso;
@@ -16,7 +16,15 @@ public class Curso {
         return siglasCurso;
     }
 
+    public void setSiglasCurso(String siglasCurso) {
+        this.siglasCurso = siglasCurso;
+    }
+
     public String getDescripcionCurso() {
         return descripcionCurso;
+    }
+
+    public void setDescripcionCurso(String descripcionCurso) {
+        this.descripcionCurso = descripcionCurso;
     }
 }

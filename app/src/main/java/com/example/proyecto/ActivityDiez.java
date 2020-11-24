@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.proyecto.entidades.Curso;
+
 import java.util.ArrayList;
 
 public class ActivityDiez extends AppCompatActivity {
@@ -92,15 +94,18 @@ public class ActivityDiez extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_cursos_horarios:
-
+                Intent anadirCurso = new Intent(ActivityDiez.this, AnadirCurso.class);
+                startActivity(anadirCurso);
                 return true;
 
             case R.id.menu_modificar_cursos_horarios:
-
+                Intent modificarCurso = new Intent(ActivityDiez.this, ModificarCurso.class);
+                startActivity(modificarCurso);
                 return true;
 
             case R.id.menu_eliminar_cursos_horarios:
-
+                Intent borrarCurso = new Intent(ActivityDiez.this, BorrarCurso.class);
+                startActivity(borrarCurso);
                 return true;
 
             default:

@@ -70,12 +70,16 @@
     <string name="textView_informacion_sexo_cuenta">Gender choosed</string>
     <string name="textView_infomacion_fecha_nacimiento_cuenta">16/07/1994</string>
     <string name="textView_informacion_usuario_cuenta">Username</string>
+    <string name="textView_email_usuario_cuenta">Email</string>
+    <string name="textView_telefono_usuario_cuenta">Phone number</string>
+    <string name="textView_nacionalidad_usuario_cuenta">Nacionality</string>
+    <string name="textView_localidad_usuario_cuenta">City</string>
     <string name="menu_contextual_alumno_modificar">Modify alumn</string>
     <string name="menu_contextual_alumno_enviar_email">Send email</string>
     <string name="menu_contextual_alumno_llamar">Call</string>
 
     <string name="textView_pagina_principal">¡ WELCOME TO THE APP !</string>
-    <string name="textView_pagina_principl_texto">Welcome to this app. You\'ve already entered to the app. This application is made for better experience on the education manage. As you see this app is a prototype which doesn\'t have nor all his funcionalities nor his final design. We hope in the future the application appearance will be prettier than now. On this way, our organization would like to direct our product to two different kind os users. Firstly, as you can se this protoctype is made for teachers. In spite of this fact, we would design a new version of our app made for students due to they also want to manage their marks, their chores, etc. We hope this first version ( a protoctype) let you imagin and kwnow more about our proyect.</string>
+    <string name="textView_pagina_principl_texto">Welcome to this app. You\'ve already entered to the app. This application is made for better experience on the education manage. As you see this app is a prototype which doesn\'t have nor all his funcionalities nor his final design. We hope in the future the application appearance will be prettier than now. On this way, our organization would like to direct our product to two different kind os users. Firstly, as you can se this protoctype is made for teachers. In spite of this fact, we would design a new version of our app made for students due to they also want to manage their marks, their chores, etc. We hope this first version ( a protoctype) let you imagine and kwnow more about our proyect.</string>
 
     <string name="descripcion_foto_profesor" tools:ignore="Typos">Teacher picture</string>
     <string name="descripcion_foto_alumno">Alumn picture</string>
@@ -88,5 +92,95 @@
     <string name="textView_descripcion_asignatura">Subject description</string>
     <string name="textView_aula_asignatura">Classroom</string>
 
+    <string name="textViex_titulo_anadir_curso">NEW COURSE</string>
+    <string name="editText_anadir_siglas_curso">Insert the acronym course</string>
+    <string name="editText_anadir_descripcion_curso">Insert the complete course name</string>
+    <string name="button_anadir_curso">ADD</string>
+    <string name="button_cancelar_anadir_curso" tools:ignore="ButtonCase">CANCEL</string>
 
+    <string name="textView_titulo_anadir_asignatura">NEW SUBJECT</string>
+    <string name="editText_anadir_siglas_asignatura">Insert the acronym subject</string>
+    <string name="editText_anadir_descripcion_asignatura">Insert the complete subject name</string>
+    <string name="editText_anadir_aula_asignatura">Insert the classroom subject</string>
+    <string name="button_anadir_asignatura">ADD</string>
+    <string name="button_cancelar_anadir_asignatura" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textView_titulo_anadir_alumno">NEW ALUMN</string>
+    <string name="editText_anadir_nombre_alumno">Insert the alumn name</string>
+    <string name="editText_anadir_edad_alumno">Insert the age</string>
+    <string name="editText_anadir_email_alumno">Insert the email</string>
+    <string name="editText_anadir_domicilio_alumno">Insert the address</string>
+    <string name="editText_anadir_localidad_alumno">Insert the city</string>
+    <string name="editText_anadir_telefono_alumno">Insert the phone number</string>
+    <string name="button_anadir_alumno">ADD</string>
+    <string name="button_cancelar_anadir_alumno" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textView_titulo_anadir_profesor">NEW TEACHER</string>
+    <string name="editText_anadir_nombre_profesor">Insert the teacher name</string>
+    <string name="editText_anadir_asignatura_profesor">Insert the subject</string>
+    <string name="editText_anadir_email_profesor">Insert the email</string>
+    <string name="editText_anadir_telefono_profesor">Insert the phone number</string>
+    <string name="button_anadir_profesor">ADD</string>
+    <string name="button_cancelar_anadir_profesor" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_borrar_alumno">DELETE ALUMN</string>
+    <string name="button_borrar_alumno">DELETE</string>
+    <string name="button_cancelar_borrar_alumno" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_borrar_asignatura">DELETE SUBJECT</string>
+    <string name="button_borrr_asignatura">DELETE</string>
+    <string name="button_cancelar_borrar_asignatura" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_borrar_curso">DELETE COURSE</string>
+    <string name="button_borrar_curso">DELETE</string>
+    <string name="button_cancelar_borrar_curso" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_borrar_profesor">DELETE TEACHER</string>
+    <string name="button_borrar_profesor">DELETE</string>
+    <string name="button_cancelar_borrar_profesor" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_modificar_alumno">MODIFY ALUMN</string>
+    <string name="editText_modificar_nombre_alumno">Insert the new alumn name</string>
+    <string name="editText_modificar_edad_alumno">Insert the new age</string>
+    <string name="editText_modificar_email_alumno">Insert the new email</string>
+    <string name="editText_modificar_domicilio_alumno">Insert the new address</string>
+    <string name="editText_modificar_localidad_alumno">Insert the new city</string>
+    <string name="editText_amodificar_telefono_alumno">Insert the new phone number</string>
+    <string name="button_modificarAlumno">MODIFY</string>
+    <string name="button_cancelar_modificar_alumno" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_modificar_asignatura">MODIFY SUBJECT</string>
+    <string name="editText_modificar_siglas_asignatura">Insert the new acronym subject</string>
+    <string name="editText_modificar_descripcion_asignatura">Insert the new subject description</string>
+    <string name="editText_modificar_aula_asignatura">Insert the new classroom subject</string>
+    <string name="button_modificar_asignatura">MODIFY</string>
+    <string name="button_cancelar_modificar_asignatura" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_modificar_curso">MODIFY COURSE</string>
+    <string name="editText_modificar_siglas_curso">Insert the new acronym course</string>
+    <string name="editText_modificar_descripcion_curso">Insert the new course description</string>
+    <string name="button_modificar_curso">MODIFY</string>
+    <string name="button_cancelar_modificar_curso" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_modificar_profesor">MODIFY TEACHER</string>
+    <string name="editText_modificar_nombre_profesor">Insert the new teacher name</string>
+    <string name="editText_modificar_asignatura_profesor">Insert the new subject</string>
+    <string name="editText_modificar_email_profesor">Insert the new email</string>
+    <string name="editText_modificar_telefono_profesor">Insert the new phone number</string>
+    <string name="button_modificar_telefono_profesor">MODIFY</string>
+    <string name="button_cancelar_modificar_telefono_profesor" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="textViex_titulo_modificar_usuario">MODIFY ACCOUNT INFORMATION</string>
+    <string name="editText_modificar_nombre_usuario">Insert a new first name</string>
+    <string name="editText_modificar_apellidos_usuario">Insert new last name</string>
+    <string name="editText_modificar_username_usuario">Insert a new username</string>
+    <string name="editText_email_modificar_usuario">Insert a new email</string>
+    <string name="editText_telefono_modificar_usuario">Insert a new phone number</string>
+    <string name="editText_localidad_modificar_usuario">Insert a new city</string>
+    <string name="checkBox_modificar_hombre_usuario">Man</string>
+    <string name="checkBox_modificar_mujer_usuario">Woman</string>
+    <string name="button_cancelar_modificar_usuario" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="button_modificar_usuario">MODIFy</string>
+
+    <string name="editText_email_usuario">Insert the email</string>
 </resources>

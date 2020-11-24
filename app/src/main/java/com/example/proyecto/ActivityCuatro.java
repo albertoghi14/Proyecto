@@ -1,8 +1,12 @@
 package com.example.proyecto;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,6 +14,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.proyecto.entidades.Asignatura;
 
 import java.util.ArrayList;
 
@@ -91,18 +97,51 @@ public class ActivityCuatro extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_asignaturas:
+                Intent anadirAsignatura = new Intent(ActivityCuatro.this, AnadirAsignatura.class);
+                startActivity(anadirAsignatura);
                 return true;
 
             case R.id.menu_modificar_asignaturas:
-
+                Intent modificarAsignatura = new Intent(ActivityCuatro.this, ModificarAsignatura.class);
+                startActivity(modificarAsignatura);
                 return true;
 
             case R.id.menu_eliminar_asignaturas:
-
+                Intent borrarAsignatura = new Intent(ActivityCuatro.this, BorrarAsignatura.class);
+                startActivity(borrarAsignatura);
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public static class ConexionSQLiteHelper extends SQLiteOpenHelper {
+
+        final String CREAR_TABLA_ALUMNO = "CREATE TABLE alumno (dni TEXT, nombre TEXT, apellidos TEXT, edad INTEGER, email TEXT, direccion TEXT, domicilio TEXT, telefonoAlumno TEXT)";
+        final String CREAR_TABLA_PROFESOR = "CREATE TABLE profesor (dniProfesor TEXT, nombreProfesor TEXT, apellidosProfesor TEXT, sexo TEXT, fechaNacimiento DATE, nacionalidad TEXT, localidad TEXT, emailProfesor TEXT, telefono TEXT)";
+        final String CREAR_TABLA_CURSO = "CREATE TABLE curso (siglasCurso TEXT, descripcionCurso TEXT)";
+        final String CREAR_TABLA_ASIGNATURA = "CREATE TABLE asignatura (siglasAsignatura TEXT, descripcionAsignatura TEXT, aulaAsignatura TEXT)";
+
+        public ConexionSQLiteHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+            super(context, name, factory, version);
+        }
+
+        @Override
+        public void onCreate(SQLiteDatabase db) {
+            db.execSQL(CREAR_TABLA_ALUMNO);
+            db.execSQL(CREAR_TABLA_PROFESOR);
+            db.execSQL(CREAR_TABLA_CURSO);
+            db.execSQL(CREAR_TABLA_ASIGNATURA);
+        }
+
+        @Override
+        public void onUpgrade(SQLiteDatabase db, int versionAntigua, int versionNueva) {
+            db.execSQL("DROP TABLE IF EXISTS alumno");
+            db.execSQL("DROP TABLE IF EXISTS profesor");
+            db.execSQL("DROP TABLE IF EXISTS curso");
+            db.execSQL("DROP TABLE IF EXISTS asignatura");
+            onCreate(db);
         }
     }
 }

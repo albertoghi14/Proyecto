@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.proyecto.entidades.Alumno;
+
 import java.util.ArrayList;
 
 public class AdaptadorAlumno extends BaseAdapter {
@@ -53,7 +55,7 @@ public class AdaptadorAlumno extends BaseAdapter {
         email.setText(alumno.getEmail());
         direccion.setText(alumno.getDireccion());
         domicilio.setText(alumno.getDomicilio());
-        telefono.setText(alumno.getTelefono());
+        telefono.setText(alumno.getTelefonoAlumno());
 
         return convertView;
     }
