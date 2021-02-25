@@ -183,4 +183,10 @@
     <string name="button_modificar_usuario">MODIFICAR</string>
 
     <string name="editText_email_usuario">Introduce un email</string>
+    <string name="nombre_producto">StudyCo</string>
+    <string name="textViex_texto_splash_screen">DAW2</string>
+    <string name="textView_splash_screen_general_texto">CARGANDO...</string>
+    <string name="logo_splash_screen_general">Logo de carga Splah Screen</string>
+    <string name="textView_splash_screen_inicio_sesion_texto">Iniciando sesión...</string>
+    <string name="textView_splash_screen_registrarse_texto">Registrando usuario...</string>
 </resources>

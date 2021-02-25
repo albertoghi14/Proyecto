@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/color_fondo"
     android:orientation="vertical"
     tools:context=".ActivityUno">
@@ -22,37 +23,84 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
                 android:text="@string/textView_titulo_registrarse"
                 android:textColor="@color/colorPrimary"
                 android:textAlignment="center"
                 android:textSize="30sp" />
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/editTextNombreUsuario"
+                app:theme="@style/Theme.MaterialComponents.Light"
+                app:hintTextColor="@color/texto_item"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:boxStrokeColor="@color/texto_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20sp"
                 android:ems="10"
                 android:hint="@string/editText_nombre_registrarse"
-                android:inputType="textPersonName" />
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.634"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
 
-            <EditText
-                android:id="@+id/editTextApellidosUsuario"
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/textViewTituloRegistrarUsuario"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextApellidosUsuario"
+                app:layout_constraintVertical_bias="0.841" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextApellidosUsuario"
+                app:theme="@style/Theme.MaterialComponents.Light"
+                app:counterMaxLength="30"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/texto_item"
+                app:boxStrokeColor="@color/texto_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
                 android:ems="10"
                 android:hint="@string/editText_apellidos_registrar"
-                android:inputType="textPersonName" />
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.634"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewTituloRegistrarUsuario"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.458"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextApellidosUsuario"
+                    app:layout_constraintVertical_bias="0.841" />
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginRight="60dp"
                 android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
@@ -142,68 +190,201 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp" />
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20sp"/>
 
-                <EditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/editTextLocalidadUsuario"
+                    app:theme="@style/Theme.MaterialComponents.Light"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/texto_item"
+                    app:boxStrokeColor="@color/texto_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20sp"
                     android:ems="10"
                     android:hint="@string/editText_localidad_registrarse"
-                    android:inputType="textPersonName" />
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.634"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
 
-                <EditText
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        app:layout_constraintBottom_toTopOf="@+id/spinnerNacionalidadUsuario"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.458"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextTelefonoUsuario"
+                        app:layout_constraintVertical_bias="0.841" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/editTextTelefonoUsuario"
+                    app:theme="@style/Theme.MaterialComponents.Light"
+                    app:counterMaxLength="9"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/texto_item"
+                    app:boxStrokeColor="@color/texto_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20sp"
                     android:ems="10"
                     android:hint="@string/editText_telefono_registrarse"
-                    android:inputType="phone" />
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.634"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
 
-                <EditText
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        app:layout_constraintBottom_toTopOf="@+id/editTextLocalidadUsuario"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.458"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextUsernameUsuario"
+                        app:layout_constraintVertical_bias="0.841" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/editTextUsernameUsuario"
+                    app:theme="@style/Theme.MaterialComponents.Light"
+                    app:counterMaxLength="15"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/texto_item"
+                    app:boxStrokeColor="@color/texto_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20sp"
                     android:ems="10"
                     android:hint="@string/editText_usuario_registrar"
-                    android:inputType="textPersonName" />
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.634"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
 
-                <EditText
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        app:layout_constraintBottom_toTopOf="@+id/editTextTelefonoUsuario"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.458"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextEmailUsuario"
+                        app:layout_constraintVertical_bias="0.841" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/editTextEmailUsuario"
+                    app:theme="@style/Theme.MaterialComponents.Light"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/texto_item"
+                    app:boxStrokeColor="@color/texto_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20sp"
                     android:ems="10"
                     android:hint="@string/editText_email_usuario"
-                    android:inputType="textEmailAddress" />
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.634"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
 
-                <EditText
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        app:layout_constraintBottom_toTopOf="@+id/editTextUsernameUsuario"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.458"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordUsuario"
+                        app:layout_constraintVertical_bias="0.841" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/editTextPasswordUsuario"
+                    app:theme="@style/Theme.MaterialComponents.Light"
+                    app:hintTextColor="@color/texto_item"
+                    app:boxStrokeColor="@color/texto_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20sp"
                     android:ems="10"
                     android:hint="@string/editText_password_registrar"
-                    android:inputType="textPassword" />
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.634"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
 
-                <EditText
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        app:layout_constraintBottom_toTopOf="@+id/editTextEmailUsuario"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.458"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordConfirmarUsuario"
+                        app:layout_constraintVertical_bias="0.841" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/editTextPasswordConfirmarUsuario"
+                    app:theme="@style/Theme.MaterialComponents.Light"
+                    app:hintTextColor="@color/texto_item"
+                    app:boxStrokeColor="@color/texto_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20sp"
                     android:ems="10"
                     android:hint="@string/editText_password_registrar_validacion"
-                    android:inputType="textPassword" />
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.634"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordUsuario"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.458"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/radioButtonTerminosUno"
+                        app:layout_constraintVertical_bias="0.841" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <RadioButton
                     android:id="@+id/radioButtonTerminosUno"

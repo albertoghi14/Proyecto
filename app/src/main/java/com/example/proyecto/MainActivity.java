@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.proyecto.utilidades.Constantes;
+import com.google.android.material.textfield.TextInputLayout;
 
 import static com.example.proyecto.utilidades.Constantes.CAMPO_APELLIDOS_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_EMAIL_USUARIO;
@@ -40,14 +41,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void Entrar(View view){
         helper = new ConexionSQLiteHelper(this, "Proyecto.db", null, 1);
-        EditText usuario = (EditText) findViewById(R.id.editText_usuario_inicio_sesion);
-        EditText password = (EditText) findViewById(R.id.editText_password_inicio_sesion);
+        TextInputLayout usuario = (TextInputLayout) findViewById(R.id.editText_usuario_inicio_sesion);
+        TextInputLayout password = (TextInputLayout) findViewById(R.id.editText_password_inicio_sesion);
 
         try {
             Cursor cursor = ConsultarUsuPas
-                    (usuario.getText().toString(), password.getText().toString());
+                    (usuario.getEditText().toString(), password.getEditText().toString());
             if (cursor.getCount()>0){
-                Intent entrar = new Intent(this, ActivityDos.class);
+                Intent entrar = new Intent(this, SplashScreenInicioSesion.class);
                 startActivity(entrar);
                 Toast toastEntrar =
                         Toast.makeText(getApplicationContext(),
@@ -61,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
 
                 toastErrorLogin.show();
             }
-            usuario.setText("");
-            password.setText("");
+            usuario.getEditText().setText("");
+            password.getEditText().setText("");
             usuario.findFocus();
         } catch (SQLException e){
             e.printStackTrace();

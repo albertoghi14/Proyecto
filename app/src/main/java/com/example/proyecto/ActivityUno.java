@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.proyecto.entidades.Usuario;
+import com.google.android.material.textfield.TextInputLayout;
 
 import static com.example.proyecto.utilidades.Constantes.CAMPO_APELLIDOS_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_EMAIL_USUARIO;
@@ -32,7 +33,7 @@ import static com.example.proyecto.utilidades.Constantes.TABLA_USUARIO;
 public class ActivityUno extends AppCompatActivity {
 
     Button btnRegisUsu, btnCancRegis;
-    EditText txtNomUsu, txtApellUsu, txtLocUsu, txtTelfUsu, txtUserUsu, txtPassUsu, txtPasswUsu, txtEmailUsu;
+    TextInputLayout txtNomUsu, txtApellUsu, txtLocUsu, txtTelfUsu, txtUserUsu, txtPassUsu, txtPasswUsu, txtEmailUsu;
     CheckBox checkUsuHomb, checkUsuMuj;
     RadioButton radTermUno, radTermDos;
     Spinner listaPaises;
@@ -52,14 +53,14 @@ public class ActivityUno extends AppCompatActivity {
 
         btnRegisUsu = (Button) findViewById(R.id.buttonRegistrarUsuario);
         btnCancRegis = (Button) findViewById(R.id.buttonCancelarRegistrarUsuario);
-        txtNomUsu = (EditText) findViewById(R.id.editTextNombreUsuario);
-        txtApellUsu = (EditText) findViewById(R.id.editTextApellidosUsuario);
-        txtLocUsu = (EditText) findViewById(R.id.editTextLocalidadUsuario);
-        txtTelfUsu = (EditText) findViewById(R.id.editTextTelefonoUsuario);
-        txtUserUsu = (EditText) findViewById(R.id.editTextUsernameUsuario);
-        txtPassUsu = (EditText) findViewById(R.id.editTextPasswordUsuario);
-        txtPasswUsu = (EditText) findViewById(R.id.editTextPasswordConfirmarUsuario);
-        txtEmailUsu = (EditText) findViewById(R.id.editTextEmailUsuario);
+        txtNomUsu = (TextInputLayout) findViewById(R.id.editTextNombreUsuario);
+        txtApellUsu = (TextInputLayout) findViewById(R.id.editTextApellidosUsuario);
+        txtLocUsu = (TextInputLayout) findViewById(R.id.editTextLocalidadUsuario);
+        txtTelfUsu = (TextInputLayout) findViewById(R.id.editTextTelefonoUsuario);
+        txtUserUsu = (TextInputLayout) findViewById(R.id.editTextUsernameUsuario);
+        txtPassUsu = (TextInputLayout) findViewById(R.id.editTextPasswordUsuario);
+        txtPasswUsu = (TextInputLayout) findViewById(R.id.editTextPasswordConfirmarUsuario);
+        txtEmailUsu = (TextInputLayout) findViewById(R.id.editTextEmailUsuario);
         checkUsuHomb = (CheckBox) findViewById(R.id.checkBoxSexoHombre);
         checkUsuMuj = (CheckBox) findViewById(R.id.checkBoxSexoMujer);
         radTermUno = (RadioButton) findViewById(R.id.radioButtonTerminosUno);
@@ -107,7 +108,7 @@ public class ActivityUno extends AppCompatActivity {
         toastCrear.show();
 
         Intent crear = new Intent(this, MainActivity.class);
-        crear.putExtra("Nombre", txtNomUsu.getText().toString());
+        crear.putExtra("Nombre", txtNomUsu.getEditText().getText().toString());
         startActivity(crear);
     }
 
@@ -137,16 +138,16 @@ public class ActivityUno extends AppCompatActivity {
         SQLiteDatabase db = helper.getWritableDatabase();
 
         ContentValues valores = new ContentValues();
-        valores.put(CAMPO_NOMBRE_USUARIO, String.valueOf(txtNomUsu.getText()));
-        valores.put(CAMPO_APELLIDOS_USUARIO, String.valueOf(txtApellUsu.getText()));
+        valores.put(CAMPO_NOMBRE_USUARIO, String.valueOf(txtNomUsu.getEditText().getText()));
+        valores.put(CAMPO_APELLIDOS_USUARIO, String.valueOf(txtApellUsu.getEditText().getText()));
         valores.put(CAMPO_SEXO, validarCheck() );
         valores.put(CAMPO_FECHA_NACIMIENTO, obtenerFecha());
         valores.put(CAMPO_NACIONALIDAD, String.valueOf(listaPaises.getSelectedItem()));
-        valores.put(CAMPO_LOCALIDAD, String.valueOf(txtLocUsu.getText()));
-        valores.put(CAMPO_TELEFONO_USUARIO, String.valueOf(txtTelfUsu.getText()));
-        valores.put(CAMPO_USERNAME_USUARIO, String.valueOf(txtUserUsu.getText()));
-        valores.put(CAMPO_EMAIL_USUARIO, String.valueOf(txtEmailUsu.getText()));
-        valores.put(CAMPO_PASSWORD, String.valueOf(txtPassUsu.getText()));
+        valores.put(CAMPO_LOCALIDAD, String.valueOf(txtLocUsu.getEditText().getText()));
+        valores.put(CAMPO_TELEFONO_USUARIO, String.valueOf(txtTelfUsu.getEditText().getText()));
+        valores.put(CAMPO_USERNAME_USUARIO, String.valueOf(txtUserUsu.getEditText().getText()));
+        valores.put(CAMPO_EMAIL_USUARIO, String.valueOf(txtEmailUsu.getEditText().getText()));
+        valores.put(CAMPO_PASSWORD, String.valueOf(txtPassUsu.getEditText().getText()));
 
         db.insertOrThrow(TABLA_USUARIO, null, valores);
         db.close();
