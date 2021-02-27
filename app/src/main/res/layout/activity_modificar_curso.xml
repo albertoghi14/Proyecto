@@ -1,76 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModificarCurso">
-
-    <Button
-        android:id="@+id/buttonModificarCurso"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="112dp"
-        android:text="@string/button_modificar_curso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModificarDescripcionCurso" />
-
-    <Button
-        android:id="@+id/buttonCancelarModificarCurso"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_cancelar_modificar_curso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonModificarCurso" />
-
-    <EditText
-        android:id="@+id/editTextModificarSiglasCurso"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_modificar_siglas_curso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerModificarCurso" />
-
-    <EditText
-        android:id="@+id/editTextModificarDescripcionCurso"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_modificar_descripcion_curso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModificarSiglasCurso" />
-
-    <Spinner
-        android:id="@+id/spinnerModificarCurso"
-        android:layout_width="311dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloModificarCurso" />
+    tools:context=".ModificarCurso"
+    android:padding="25sp"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textViewTituloModificarCurso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textViex_titulo_modificar_curso"
-        android:textSize="30sp"
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.054" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinnerModificarCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTituloModificarCurso" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextModificarSiglasCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="20sp"
+            android:ems="10"
+            android:text="@string/editText_modificar_siglas_curso"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/textViewTituloModificarCurso"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextModificarDescripcionCurso"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextModificarDescripcionCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="60sp"
+            android:ems="10"
+            android:text="@string/editText_modificar_descripcion_curso"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/editTextAnadirSiglasCurso"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonModificarCurso"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonModificarCurso"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:text="@string/button_modificar_curso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:theme="@style/Theme.MaterialComponents"
+            app:layout_constraintBottom_toTopOf="@+id/editTextModificarDescripcionCurso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelarModificarCurso"
+            app:layout_constraintVertical_bias="0.841"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancelarModificarCurso"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"
+            android:text="@string/button_cancelar_modificar_curso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:theme="@style/Theme.MaterialComponents"
+            app:layout_constraintBottom_toTopOf="@+id/buttonModificarCurso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.841"/>
+
+    </LinearLayout>
+
+</LinearLayout>

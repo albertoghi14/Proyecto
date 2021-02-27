@@ -1,52 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BorrarProfesor">
+    tools:context=".BorrarProfesor"
+    android:padding="25sp"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonCancelarBorrarProfesor"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/button_cancelar_borrar_profesor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBorrarProfesor" />
 
-    <Button
-        android:id="@+id/buttonBorrarProfesor"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="84dp"
-        android:text="@string/button_borrar_profesor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerBorrarProfesor" />
+        <TextView
+            android:id="@+id/textViewTituloBorrarProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textViex_titulo_borrar_profesor"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="80sp"
+            android:layout_marginTop="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.054" />
 
-    <Spinner
-        android:id="@+id/spinnerBorrarProfesor"
-        android:layout_width="311dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="92dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloBorrarProfesor" />
+        <Spinner
+            android:id="@+id/spinnerBorrarProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100sp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTituloBorrarProfesor" />
 
-    <TextView
-        android:id="@+id/textViewTituloBorrarProfesor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textViex_titulo_borrar_profesor"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBorrarProfesor"
+            app:theme="@style/Theme.MaterialComponents"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:text="@string/button_borrar_profesor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerBorrarProfesor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelarBorrarProfesor"
+            app:layout_constraintVertical_bias="0.841"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancelarBorrarProfesor"
+            app:theme="@style/Theme.MaterialComponents"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:text="@string/button_cancelar_borrar_profesor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBorrarProfesor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.841"/>
+
+    </LinearLayout>

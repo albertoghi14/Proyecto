@@ -1,51 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AnadirAsignatura">
-
-    <Button
-        android:id="@+id/buttonCancelarAnadirAsignatura"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="180dp"
-        android:text="@string/button_cancelar_anadir_asignatura"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAnadirAsignatura" />
-
-    <EditText
-        android:id="@+id/editTextAnadirSiglasAsignatura"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="64dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_anadir_siglas_asignatura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloAnadirAsignatura" />
-
-    <EditText
-        android:id="@+id/editTextAnadirAulaAsignatura"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_anadir_aula_asignatura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirDescripcionAsignatura" />
+    tools:context=".AnadirAsignatura"
+    android:padding="25sp"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textViewTituloAnadirAsignatura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="32dp"
         android:text="@string/textView_titulo_anadir_asignatura"
         android:textSize="30sp"
@@ -53,26 +20,139 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextAnadirDescripcionAsignatura"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_anadir_descripcion_asignatura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirSiglasAsignatura" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="20sp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonAnadirAsignatura"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="64dp"
-        android:text="@string/button_anadir_asignatura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAnadirAulaAsignatura" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextAnadirSiglasAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="20sp"
+            android:ems="10"
+            android:text="@string/editText_anadir_siglas_asignatura"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/textViewTituloAnadirAsignatura"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAnadirDescripcionAsignatura"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextAnadirDescripcionAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="20sp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/editTextAnadirDescripcionAsignaturaa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAnadirAulaAsignatura"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextAnadirAulaAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="40sp"
+            android:ems="10"
+            android:text="@string/editText_anadir_aula_asignatura"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/editTextAnadirDescripcionAsignatura"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAnadirAsignatura"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAnadirAsignatura"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:text="@string/button_anadir_asignatura"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:theme="@style/Theme.MaterialComponents"
+            app:layout_constraintBottom_toTopOf="@+id/editTextAnadirAulaAsignatura"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelarAnadirAsignatura"
+            app:layout_constraintVertical_bias="0.841"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancelarAnadirAsignatura"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:text="@string/button_cancelar_anadir_asignatura"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:theme="@style/Theme.MaterialComponents"
+            app:layout_constraintBottom_toTopOf="@+id/buttonAnadirAsignatura"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.841"/>
+    </LinearLayout>
+
+</LinearLayout>

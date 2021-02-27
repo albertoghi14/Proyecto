@@ -1,113 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModificarAlumno">
-
-    <Button
-        android:id="@+id/buttonModificarAlumno"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_modificarAlumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModificarTelefonoAlumno" />
-
-    <Button
-        android:id="@+id/buttonCancelarModificarAlumno"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_cancelar_modificar_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonModificarAlumno" />
-
-    <EditText
-        android:id="@+id/editTextModificarNombreAlumno"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_modificar_nombre_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerModificarAlumno" />
-
-    <EditText
-        android:id="@+id/editTextModificarEdadAlumno"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_modificar_edad_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModificarNombreAlumno" />
-
-    <EditText
-        android:id="@+id/editTextModificarEmailAlumno"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="@string/editText_modificar_email_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModificarEdadAlumno" />
-
-    <EditText
-        android:id="@+id/editTextModificarDomicilioAlumno"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_modificar_domicilio_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModificarEmailAlumno" />
-
-    <EditText
-        android:id="@+id/editTextModificarTelefonoAlumno"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_amodificar_telefono_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModificarLocalidadAlumno" />
-
-    <EditText
-        android:id="@+id/editTextModificarLocalidadAlumno"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/editText_modificar_localidad_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextModificarDomicilioAlumno" />
-
-    <Spinner
-        android:id="@+id/spinnerModificarAlumno"
-        android:layout_width="311dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloModificarAlumno" />
+    tools:context=".ModificarAlumno"
+    android:padding="25sp"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textViewTituloModificarAlumno"
@@ -115,10 +14,249 @@
         android:layout_height="wrap_content"
         android:text="@string/textViex_titulo_modificar_alumno"
         android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.054" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="20sp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinnerModificarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTituloModificarAlumno" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextModificarNombreAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:text="@string/editText_modificar_nombre_alumno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/spinnerModificarAlumno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextModificarEdadAlumno"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextModificarEdadAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:text="@string/editText_modificar_edad_alumno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/editTextModificarNombreAlumno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextModificarEmailAlumno"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextModificarEmailAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:text="@string/editText_modificar_email_alumno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/editTextModificarEdadAlumno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextModificarDomicilioAlumno"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextModificarDomicilioAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:text="@string/editText_modificar_domicilio_alumno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/editTextModificarEmailAlumno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAnadirAsignaturaProfesor"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextModificarTelefonoAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:text="@string/editText_amodificar_telefono_alumno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                app:layout_constraintBottom_toTopOf="@+id/editTextModificarDomicilioAlumno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextLocalidadUsuario"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextModificarLocalidadAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Theme.MaterialComponents.Light"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/texto_item"
+            app:boxStrokeColor="@color/texto_item"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:text="@string/editText_modificar_localidad_alumno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.634">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/editTextModificarTelefonoAlumno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonModificarAlumno"
+                app:layout_constraintVertical_bias="0.841" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonModificarAlumnor"
+            android:layout_width="194dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:text="@string/button_modificarAlumno"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:theme="@style/Theme.MaterialComponents"
+            app:layout_constraintBottom_toTopOf="@+id/editTextModificarLocalidadAlumno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelarModificarAlumno"
+            app:layout_constraintVertical_bias="0.841"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancelarModificarAlumno"
+            android:layout_width="194dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:text="@string/button_cancelar_modificar_alumno"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:theme="@style/Theme.MaterialComponents"
+            app:layout_constraintBottom_toTopOf="@+id/buttonModificarAlumno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.841"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,52 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BorrarAlumno">
+    tools:context=".BorrarAlumno"
+    android:padding="25sp"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonBorrarAlumno"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="92dp"
-        android:text="@string/button_borrar_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerBorrarAlumno" />
+        <TextView
+            android:id="@+id/textViewTituloBorrarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textViex_titulo_borrar_alumno"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="80sp"
+            android:layout_marginTop="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.054" />
 
-    <Button
-        android:id="@+id/buttonCancelarBorrarAlumno"
-        android:layout_width="194dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_cancelar_borrar_alumno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBorrarAlumno" />
+        <Spinner
+            android:id="@+id/spinnerBorrarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100sp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTituloBorrarAlumno" />
 
-    <TextView
-        android:id="@+id/textViewTituloBorrarAlumno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textViex_titulo_borrar_alumno"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBorrarAlumno"
+            app:theme="@style/Theme.MaterialComponents"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:text="@string/button_borrar_alumno"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerBorrarAlumno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCancelarBorrarAlumno"
+            app:layout_constraintVertical_bias="0.841"/>
 
-    <Spinner
-        android:id="@+id/spinnerBorrarAlumno"
-        android:layout_width="311dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="84dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloBorrarAlumno" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancelarBorrarAlumno"
+            app:theme="@style/Theme.MaterialComponents"
+            android:layout_width="194dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:text="@string/button_cancelar_borrar_alumno"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/color_fondo"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBorrarAlumno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.841"/>
+
+    </LinearLayout>

@@ -41,12 +41,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void Entrar(View view){
         helper = new ConexionSQLiteHelper(this, "Proyecto.db", null, 1);
-        TextInputLayout usuario = (TextInputLayout) findViewById(R.id.editText_usuario_inicio_sesion);
-        TextInputLayout password = (TextInputLayout) findViewById(R.id.editText_password_inicio_sesion);
+        TextInputLayout usuario = findViewById(R.id.editText_usuario_inicio_sesion);
+        TextInputLayout password = findViewById(R.id.editText_password_inicio_sesion);
 
         try {
+            String usuariocad = usuario.getEditText().getText().toString();
+            String passcad = password.getEditText().getText().toString();
             Cursor cursor = ConsultarUsuPas
-                    (usuario.getEditText().toString(), password.getEditText().toString());
+                    (usuariocad, passcad);
             if (cursor.getCount()>0){
                 Intent entrar = new Intent(this, SplashScreenInicioSesion.class);
                 startActivity(entrar);

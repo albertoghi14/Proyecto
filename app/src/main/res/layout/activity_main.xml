@@ -96,6 +96,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonIniciarSesion"
+                app:theme="@style/Theme.MaterialComponents"
                 android:layout_width="166dp"
                 android:layout_height="60sp"
                 android:layout_marginEnd="10dp"
@@ -103,7 +104,7 @@
                 android:text="@string/button_iniciar_sesion"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:backgroundTint="@color/color_fondo"
-                app:theme="@style/Theme.MaterialComponents" />
+                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonRegistrar"
