@@ -49,7 +49,8 @@
             app:boxStrokeColor="@color/texto_item"
             android:layout_marginBottom="20sp"
             android:ems="10"
-            android:text="@string/editText_modificar_siglas_curso"
+            android:hint="@string/editText_modificar_siglas_curso"
+            app:helperText="@string/helperText_siglas_modificar_curso"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +81,8 @@
             app:boxStrokeColor="@color/texto_item"
             android:layout_marginBottom="60sp"
             android:ems="10"
-            android:text="@string/editText_modificar_descripcion_curso"
+            android:hint="@string/editText_modificar_descripcion_curso"
+            app:helperText="@string/helperText_descripcion_modificar_asignatura"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -107,16 +109,17 @@
             android:layout_height="62dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10sp"
+            android:onClick="Modificar"
             android:text="@string/button_modificar_curso"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:backgroundTint="@color/color_fondo"
-            app:theme="@style/Theme.MaterialComponents"
             app:layout_constraintBottom_toTopOf="@+id/editTextModificarDescripcionCurso"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.458"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonCancelarModificarCurso"
-            app:layout_constraintVertical_bias="0.841"/>
+            app:layout_constraintVertical_bias="0.841"
+            app:theme="@style/Theme.MaterialComponents" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonCancelarModificarCurso"
@@ -124,16 +127,17 @@
             android:layout_height="62dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20sp"
+            android:onClick="Cancelar"
             android:text="@string/button_cancelar_modificar_curso"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:backgroundTint="@color/color_fondo"
-            app:theme="@style/Theme.MaterialComponents"
             app:layout_constraintBottom_toTopOf="@+id/buttonModificarCurso"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.458"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.841"/>
+            app:layout_constraintVertical_bias="0.841"
+            app:theme="@style/Theme.MaterialComponents" />
 
     </LinearLayout>
 

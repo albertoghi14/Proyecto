@@ -8,14 +8,14 @@
     <string name="button_registrarse">Sign in</string>
 
     <string name="textView_titulo_registrarse">CREATE A NEW ACCOUNT</string>
-    <string name="editText_nombre_registrarse">Insert your first name</string>
-    <string name="editText_apellidos_registrar">Insert your last name</string>
+    <string name="editText_nombre_registrarse">First name</string>
+    <string name="editText_apellidos_registrar">Last name</string>
     <string name="checkBox_hombre_registrar">Man</string>
     <string name="checkBox_mujer_registrar">Woman</string>
-    <string name="editText_localidad_registrarse">Insert your city</string>
-    <string name="editText_telefono_registrarse">Insert your phone number (optional)</string>
-    <string name="editText_usuario_registrar">Insert an username</string>
-    <string name="editText_password_registrar">Insert a password</string>
+    <string name="editText_localidad_registrarse">City</string>
+    <string name="editText_telefono_registrarse">Phone number</string>
+    <string name="editText_usuario_registrar">Username</string>
+    <string name="editText_password_registrar">Password</string>
     <string name="editText_password_registrar_validacion">Insert your password again</string>
     <string name="button_cancelar_registrar">Cancel</string>
     <string name="button_crear_registrarse">Create</string>
@@ -93,33 +93,33 @@
     <string name="textView_aula_asignatura">Classroom</string>
 
     <string name="textViex_titulo_anadir_curso">NEW COURSE</string>
-    <string name="editText_anadir_siglas_curso">Insert the acronym course</string>
-    <string name="editText_anadir_descripcion_curso">Insert the complete course name</string>
+    <string name="editText_anadir_siglas_curso">Acronym</string>
+    <string name="editText_anadir_descripcion_curso">Name</string>
     <string name="button_anadir_curso">ADD</string>
     <string name="button_cancelar_anadir_curso" tools:ignore="ButtonCase">CANCEL</string>
 
     <string name="textView_titulo_anadir_asignatura">NEW SUBJECT</string>
-    <string name="editText_anadir_siglas_asignatura">Insert the acronym subject</string>
-    <string name="editText_anadir_descripcion_asignatura">Insert the complete subject name</string>
-    <string name="editText_anadir_aula_asignatura">Insert the classroom subject</string>
+    <string name="editText_anadir_siglas_asignatura">Acronym</string>
+    <string name="editText_anadir_descripcion_asignatura">Name</string>
+    <string name="editText_anadir_aula_asignatura">Classroom</string>
     <string name="button_anadir_asignatura">ADD</string>
     <string name="button_cancelar_anadir_asignatura" tools:ignore="ButtonCase">CANCEL</string>
 
     <string name="textView_titulo_anadir_alumno">NEW ALUMN</string>
-    <string name="editText_anadir_nombre_alumno">Insert the alumn name</string>
-    <string name="editText_anadir_edad_alumno">Insert the age</string>
-    <string name="editText_anadir_email_alumno">Insert the email</string>
-    <string name="editText_anadir_domicilio_alumno">Insert the address</string>
-    <string name="editText_anadir_localidad_alumno">Insert the city</string>
-    <string name="editText_anadir_telefono_alumno">Insert the phone number</string>
+    <string name="editText_anadir_nombre_alumno">Name</string>
+    <string name="editText_anadir_edad_alumno">Age</string>
+    <string name="editText_anadir_email_alumno">Email</string>
+    <string name="editText_anadir_domicilio_alumno">Address</string>
+    <string name="editText_anadir_localidad_alumno">City</string>
+    <string name="editText_anadir_telefono_alumno">Phone number</string>
     <string name="button_anadir_alumno">ADD</string>
     <string name="button_cancelar_anadir_alumno" tools:ignore="ButtonCase">CANCEL</string>
 
     <string name="textView_titulo_anadir_profesor">NEW TEACHER</string>
-    <string name="editText_anadir_nombre_profesor">Insert the teacher name</string>
-    <string name="editText_anadir_asignatura_profesor">Insert the subject</string>
-    <string name="editText_anadir_email_profesor">Insert the email</string>
-    <string name="editText_anadir_telefono_profesor">Insert the phone number</string>
+    <string name="editText_anadir_nombre_profesor">Name</string>
+    <string name="editText_anadir_asignatura_profesor">Subject</string>
+    <string name="editText_anadir_email_profesor">Email</string>
+    <string name="editText_anadir_telefono_profesor">Phone number</string>
     <string name="button_anadir_profesor">ADD</string>
     <string name="button_cancelar_anadir_profesor" tools:ignore="ButtonCase">CANCEL</string>
 
@@ -140,43 +140,43 @@
     <string name="button_cancelar_borrar_profesor" tools:ignore="ButtonCase">CANCEL</string>
 
     <string name="textViex_titulo_modificar_alumno">MODIFY ALUMN</string>
-    <string name="editText_modificar_nombre_alumno">Insert the new alumn name</string>
-    <string name="editText_modificar_edad_alumno">Insert the new age</string>
-    <string name="editText_modificar_email_alumno">Insert the new email</string>
-    <string name="editText_modificar_domicilio_alumno">Insert the new address</string>
-    <string name="editText_modificar_localidad_alumno">Insert the new city</string>
-    <string name="editText_amodificar_telefono_alumno">Insert the new phone number</string>
+    <string name="editText_modificar_nombre_alumno">Name</string>
+    <string name="editText_modificar_edad_alumno">Age</string>
+    <string name="editText_modificar_email_alumno">Email</string>
+    <string name="editText_modificar_domicilio_alumno">Address</string>
+    <string name="editText_modificar_localidad_alumno">City</string>
+    <string name="editText_amodificar_telefono_alumno">Phone number</string>
     <string name="button_modificarAlumno">MODIFY</string>
     <string name="button_cancelar_modificar_alumno" tools:ignore="ButtonCase">CANCEL</string>
 
     <string name="textViex_titulo_modificar_asignatura">MODIFY SUBJECT</string>
-    <string name="editText_modificar_siglas_asignatura">Insert the new acronym subject</string>
-    <string name="editText_modificar_descripcion_asignatura">Insert the new subject description</string>
-    <string name="editText_modificar_aula_asignatura">Insert the new classroom subject</string>
+    <string name="editText_modificar_siglas_asignatura">Acronym</string>
+    <string name="editText_modificar_descripcion_asignatura">Name</string>
+    <string name="editText_modificar_aula_asignatura">Classroom</string>
     <string name="button_modificar_asignatura">MODIFY</string>
     <string name="button_cancelar_modificar_asignatura" tools:ignore="ButtonCase">CANCEL</string>
 
     <string name="textViex_titulo_modificar_curso">MODIFY COURSE</string>
-    <string name="editText_modificar_siglas_curso">Insert the new acronym course</string>
-    <string name="editText_modificar_descripcion_curso">Insert the new course description</string>
+    <string name="editText_modificar_siglas_curso">Acronym</string>
+    <string name="editText_modificar_descripcion_curso">Nombre</string>
     <string name="button_modificar_curso">MODIFY</string>
     <string name="button_cancelar_modificar_curso" tools:ignore="ButtonCase">CANCEL</string>
 
     <string name="textViex_titulo_modificar_profesor">MODIFY TEACHER</string>
-    <string name="editText_modificar_nombre_profesor">Insert the new teacher name</string>
-    <string name="editText_modificar_asignatura_profesor">Insert the new subject</string>
-    <string name="editText_modificar_email_profesor">Insert the new email</string>
-    <string name="editText_modificar_telefono_profesor">Insert the new phone number</string>
+    <string name="editText_modificar_nombre_profesor">Name</string>
+    <string name="editText_modificar_asignatura_profesor">Subject</string>
+    <string name="editText_modificar_email_profesor">Email</string>
+    <string name="editText_modificar_telefono_profesor">Phone number</string>
     <string name="button_modificar_telefono_profesor">MODIFY</string>
     <string name="button_cancelar_modificar_telefono_profesor" tools:ignore="ButtonCase">CANCEL</string>
 
     <string name="textViex_titulo_modificar_usuario">MODIFY ACCOUNT INFORMATION</string>
-    <string name="editText_modificar_nombre_usuario">Insert a new first name</string>
-    <string name="editText_modificar_apellidos_usuario">Insert new last name</string>
-    <string name="editText_modificar_username_usuario">Insert a new username</string>
-    <string name="editText_email_modificar_usuario">Insert a new email</string>
-    <string name="editText_telefono_modificar_usuario">Insert a new phone number</string>
-    <string name="editText_localidad_modificar_usuario">Insert a new city</string>
+    <string name="editText_modificar_nombre_usuario">First name</string>
+    <string name="editText_modificar_apellidos_usuario">Last name</string>
+    <string name="editText_modificar_username_usuario">Username</string>
+    <string name="editText_email_modificar_usuario">Email</string>
+    <string name="editText_telefono_modificar_usuario">Phone number</string>
+    <string name="editText_localidad_modificar_usuario">City</string>
     <string name="checkBox_modificar_hombre_usuario">Man</string>
     <string name="checkBox_modificar_mujer_usuario">Woman</string>
     <string name="button_cancelar_modificar_usuario" tools:ignore="ButtonCase">CANCEL</string>
@@ -187,6 +187,49 @@
     <string name="textViex_texto_splash_screen">DAW2</string>
     <string name="textView_splash_screen_general_texto">LOADING...</string>
     <string name="logo_splash_screen_general">Loading logo of Splah Screen</string>
-    <string name="textView_splash_screen_inicio_sesion_texto">Logging in...</string>
-    <string name="textView_splash_screen_registrarse_texto">Signing in...</string>
+    <string name="textView_splash_screen_inicio_sesion_texto">LOGGING IN...</string>
+    <string name="textView_splash_screen_registrarse_texto">SIGNING IN...</string>
+
+    <string name="helperText_nombre_anadir_alumno">Insert the name of the new alumn</string>
+    <string name="helperText_edad_anadir_alumno">Insert the age of the new alumn</string>
+    <string name="helperText_email_anadir_alumno">Insert the email of the new alumn</string>
+    <string name="helperText_domicilio_anadir_alumno">Insert the address of the new alumn</string>
+    <string name="helperText_telefono_anadir_alumno">Insert the phone number of the new alumn</string>
+    <string name="helperText_localidad_anadir_alumno">Insert the city of the new alumn</string>
+
+    <string name="helperText_siglas_anadir_asignatura">Insert the acronym of the new subject</string>
+    <string name="helperText_descripcion_anadir_asignatura">Insert the name of the new subject</string>
+    <string name="helperText_aula_anadir_asignatura">Insert the classroom of the new subject</string>
+    <string name="helperText_siglas_anadir_curso">Insert the acronym of the new subject</string>
+    <string name="helperText_descripcion_anadir_curso">Insert the name of the new course</string>
+    <string name="helperText_nombre_anadir_profesor">Insert the name of the new teacher</string>
+    <string name="helperText_asignatura_anadir_profesor">Insert the subject taught by the new tecaher</string>
+    <string name="helperText_email_anadir_profesor">Insert the email of the new teacher</string>
+    <string name="helperText_telefono_anadir_profesor">Insert the phone number of the new teacher</string>
+    <string name="helperText_nombre_modificar_alumno">Insert the new name for the alumn</string>
+    <string name="helperText_edad_modificar_alumno">Insert the new age for the alumn</string>
+    <string name="helperText_email_modificar_alumno">Insert the new email for the alumn</string>
+    <string name="helperText_domicilio_modificar_alumno">Insert the new address for the alumn</string>
+    <string name="helperText_telefono_modificar_alumno">Insert the new phone number for the alumn</string>
+    <string name="helperText_localidad_modificar_alumno">Insert the new city for the alumn</string>
+    <string name="helperText_siglas_modificar_asignatura">Insert the new acronym for the subject</string>
+    <string name="helperText_nombre_modificar_asignatura">Insert the new name for the subject</string>
+    <string name="helperText_aula_modificar_asignatura">Insert the new classroom for the subject</string>
+    <string name="helperText_siglas_modificar_curso">Insert the new acronym for the course</string>
+    <string name="helperText_descripcion_modificar_asignatura">Insert the new name for the subject</string>
+
+    <string name="helperText_nombre_modificar_profesor">Insert the new teacher name</string>
+    <string name="helperText_asignatura_modificar_asignatura">Introduce la nueva asignatura que imparte el profesor</string>
+    <string name="helperText_asignatura_modificar_profesor">Insert the new subject taught by the teacher</string>
+    <string name="helperText_telefono_modificar_profesor">Insert the new teacher phone number</string>
+    <string name="helperText_email_modificar_profesor">Insert the new teacher email</string>
+    <string name="helperText_telefono_modificar_asignatura">Insert the new teacher phone number</string>
+    <string name="helperText_email_modificar_asignatura">Insert the new teacher email</string>
+
+    <string name="helperText_nombre_modificar_usuario">Insert your new name</string>
+    <string name="helperText_apellidos_modificar_usuario">Insert your new last name</string>
+    <string name="helperText_username_modificar_usuario">Insert your new username</string>
+    <string name="helperText_email_modificar_usuario">Insert your new email</string>
+    <string name="helperText_telefono_modificar_usuario">Insert your new phone number</string>
+    <string name="helperText_localidad_modificar_usuario">Insert your new city</string>
 </resources>

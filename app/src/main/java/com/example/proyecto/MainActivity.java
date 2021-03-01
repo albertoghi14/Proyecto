@@ -1,12 +1,20 @@
 package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -31,6 +39,10 @@ import static com.example.proyecto.utilidades.Constantes.TABLA_USUARIO;
 public class MainActivity extends AppCompatActivity {
 
     ConexionSQLiteHelper helper ;
+    private String usuariocad, passcad;
+    private PendingIntent pendingIntent;
+    private final static String CHANNEL_ID = "NOTIFICACION";
+    private final static int NOTIFICACION_ID = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         TextInputLayout password = findViewById(R.id.editText_password_inicio_sesion);
 
         try {
-            String usuariocad = usuario.getEditText().getText().toString();
-            String passcad = password.getEditText().getText().toString();
+            usuariocad = usuario.getEditText().getText().toString();
+            passcad = password.getEditText().getText().toString();
             Cursor cursor = ConsultarUsuPas
                     (usuariocad, passcad);
             if (cursor.getCount()>0){
@@ -57,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
                                 "Inicio de sesión correcto", Toast.LENGTH_LONG);
 
                 toastEntrar.show();
+                createNotificationChannel();
+                createNotification();
+                
             }else {
                 Toast toastErrorLogin =
                         Toast.makeText(getApplicationContext(),
@@ -71,6 +86,32 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+    }
+
+    private void createNotification() {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
+        builder.setSmallIcon(R.drawable.ic_icono_notificacion);
+        builder.setContentTitle("Inicio de sesión");
+        builder.setContentText("Hey! Bienvenido "+ usuariocad +"!" +
+                "" +
+                "Estamos encantados de tenerte por aquí. Esperamos hacerte las cosas fáciles." +
+                "Déjanos ayudarte, conforma tu propio horario semanal o échale un vistazo si ya has creado uno.");
+        builder.setColor(Color.BLUE);
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setDefaults(Notification.DEFAULT_SOUND);
+
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext());
+        notificationManagerCompat.notify(NOTIFICACION_ID, builder.build());
+
+    }
+
+    private void createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            CharSequence name = "Inicio de Sesión";
+            NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
     }
 
     public void Registrar(View view){

@@ -15,4 +15,14 @@ public class ModificarAlumno extends AppCompatActivity {
         setContentView(R.layout.activity_modificar_alumno);
     }
 
+    public void Modificar(View view){
+        Intent modificar = new Intent(this, ActivityCinco.class);
+        startActivity(modificar);
+    }
+
+    public void Cancelar(View view){
+        Intent cancelar = new Intent(this, ActivityCinco.class);
+        startActivity(cancelar);
+    }
+
 }
