@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
-import android.view.animation.AnimationSet;
 import android.widget.ImageView;
 
 public class SplashScreenGeneral extends AppCompatActivity {
@@ -15,9 +14,6 @@ public class SplashScreenGeneral extends AppCompatActivity {
     //ObjectAnimator -> Proporciona soporte para animar los objetos
     private ObjectAnimator animatorLogoCarga;
     private long animationDuration = 1000;
-
-    //AnimatorSet ->
-    private AnimationSet animationSet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

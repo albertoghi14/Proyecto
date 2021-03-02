@@ -1,7 +1,5 @@
 package com.example.proyecto.utilidades;
 
-import android.os.strictmode.WebViewMethodCalledOnWrongThreadViolation;
-import android.view.View;
 
 public class Constantes {
     //Constante Base de Datos

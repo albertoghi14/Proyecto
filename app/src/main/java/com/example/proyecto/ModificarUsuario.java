@@ -1,13 +1,18 @@
 package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.core.app.NotificationCompat;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class ModificarUsuario extends AppCompatActivity {
+    private final static String CHANNEL_ID = "NOTIFICACION";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +23,32 @@ public class ModificarUsuario extends AppCompatActivity {
     public void Modificar(View view){
         Intent modificar = new Intent(this, ActivityDoce.class);
         startActivity(modificar);
+        createNotification();
     }
 
     public void Cancelar(View view){
         Intent cancelar = new Intent(this, ActivityDoce.class);
         startActivity(cancelar);
     }
+
+    private void createNotification() {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID);
+        builder.setSmallIcon(R.drawable.ic_icono_notificacion);
+        builder.setContentTitle("Modificación de usuario");
+        builder.setContentText("Hey! Un cambio de look?" +
+                "" +
+                "Vemos que has cmabiado información relacionada con tus datos personales." +
+                "Sea cual sea el motivo estamos encantandos de que sigas confiando en nuestro trabajo.");
+        builder.setColor(Color.BLUE);
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setDefaults(Notification.DEFAULT_SOUND);
+
+        builder.setContentIntent(PendingIntent.getActivity(ModificarUsuario.this, (int) System.currentTimeMillis(), new Intent(ModificarUsuario.this, ActivityDos.class), 0));
+
+        NotificationManager nmanager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        nmanager.notify(0, builder.build());
+
+    }
+
+
 }

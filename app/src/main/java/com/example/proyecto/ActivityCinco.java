@@ -9,7 +9,6 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.proyecto.entidades.Alumno;
@@ -87,7 +86,7 @@ public class ActivityCinco extends AppCompatActivity {
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
 
-        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+
 
         switch (item.getItemId()) {
             case R.id.menu_contextual_alumno_modificar:

@@ -232,4 +232,9 @@
     <string name="helperText_email_modificar_usuario">Insert your new email</string>
     <string name="helperText_telefono_modificar_usuario">Insert your new phone number</string>
     <string name="helperText_localidad_modificar_usuario">Insert your new city</string>
+
+    <string name="textView_usuario_cuenta_nombre">Username</string>
+    <string name="textView_email_usuario_cuenta_nombre">Email</string>
+    <string name="textView_telefono_usuario_cuenta_numero">Number</string>
+    <string name="textView_localidad_usuario_cuenta_nombre">City name</string>
 </resources>

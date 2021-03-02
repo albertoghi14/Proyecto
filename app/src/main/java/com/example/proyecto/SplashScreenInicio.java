@@ -1,22 +1,14 @@
 package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class SplashScreenInicio extends AppCompatActivity {
     private ImageView logoInicio;

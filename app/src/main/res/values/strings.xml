@@ -229,4 +229,9 @@
     <string name="helperText_asignatura_modificar_profesor">Introduce la nueva asignatura que imparte el profesor</string>
     <string name="helperText_telefono_modificar_profesor">Introduce el nuevo número de teléfono para el profesor</string>
     <string name="helperText_email_modificar_profesor">Introduce el nuevo email para el profesor</string>
+
+    <string name="textView_usuario_cuenta_nombre">Usuario</string>
+    <string name="textView_email_usuario_cuenta_nombre">Email</string>
+    <string name="textView_telefono_usuario_cuenta_numero">Número</string>
+    <string name="textView_localidad_usuario_cuenta_nombre">Nombre localidad</string>
 </resources>

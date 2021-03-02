@@ -2,27 +2,19 @@ package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 
 import android.app.Notification;
-import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
-
-import com.example.proyecto.utilidades.Constantes;
 import com.google.android.material.textfield.TextInputLayout;
-
 import static com.example.proyecto.utilidades.Constantes.CAMPO_APELLIDOS_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_EMAIL_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_FECHA_NACIMIENTO;
@@ -40,9 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     ConexionSQLiteHelper helper ;
     private String usuariocad, passcad;
-    private PendingIntent pendingIntent;
     private final static String CHANNEL_ID = "NOTIFICACION";
-    private final static int NOTIFICACION_ID = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                                 "Inicio de sesión correcto", Toast.LENGTH_LONG);
 
                 toastEntrar.show();
-                createNotificationChannel();
+
                 createNotification();
                 
             }else {
@@ -97,21 +87,15 @@ public class MainActivity extends AppCompatActivity {
                 "Estamos encantados de tenerte por aquí. Esperamos hacerte las cosas fáciles." +
                 "Déjanos ayudarte, conforma tu propio horario semanal o échale un vistazo si ya has creado uno.");
         builder.setColor(Color.BLUE);
-        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setPriority(NotificationCompat.PRIORITY_MAX);
         builder.setDefaults(Notification.DEFAULT_SOUND);
 
-        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext());
-        notificationManagerCompat.notify(NOTIFICACION_ID, builder.build());
+        builder.setContentIntent(PendingIntent.getActivity(MainActivity.this, (int) System.currentTimeMillis(), new Intent(MainActivity.this, ActivityOnce.class), 0));
 
-    }
+        NotificationManager nmanager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        nmanager.notify(0, builder.build());
 
-    private void createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            CharSequence name = "Inicio de Sesión";
-            NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_DEFAULT);
-            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-            notificationManager.createNotificationChannel(notificationChannel);
-        }
+
     }
 
     public void Registrar(View view){

@@ -40,9 +40,6 @@ public class ActivityUno extends AppCompatActivity {
     Spinner listaDias;
     Spinner listaMeses;
     Spinner listaAnos;
-    //Spinner spDiaUsu, spMesUsu, spAnoUsu, spNacUsu;
-
-    Usuario usu = new Usuario();
 
     ConexionSQLiteHelper helper = new ConexionSQLiteHelper(this, "Proyecto.db", null, 1);
 
@@ -76,14 +73,14 @@ public class ActivityUno extends AppCompatActivity {
         listaMeses = (Spinner) findViewById(R.id.spinnerMesUsuario);
         listaAnos = (Spinner) findViewById(R.id.spinnerAnoUsuario);
 
-        ArrayAdapter<String> adapterPais = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, paises);
+        ArrayAdapter<String> adapterPais = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, paises);
         listaPaises.setAdapter(adapterPais);
-        ArrayAdapter<String> adapterDia = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, dias);
+        ArrayAdapter<String> adapterDia = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, dias);
         listaDias.setAdapter(adapterDia);
-        ArrayAdapter<String> adapterMes = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, meses);
+        ArrayAdapter<String> adapterMes = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, meses);
         listaMeses.setAdapter(adapterMes);
         ArrayAdapter<String> adapterAno;
-        adapterAno = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, anos);
+        adapterAno = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, anos);
         listaAnos.setAdapter(adapterAno);
     }
 
