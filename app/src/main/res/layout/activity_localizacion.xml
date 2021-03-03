@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityLocalizacion"
+    android:padding="50sp"
+    android:orientation="vertical"
+    android:background="@color/color_fondo">
+
+
+    <ImageView
+        android:id="@+id/imageView_foto_google_maps"
+        android:contentDescription="@string/imagen_google_maps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="100sp"
+        app:srcCompat="@drawable/googlemaps" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEntrarMapa"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:onClick="Entrar"
+        android:text="@string/button_entrar_mapa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="@color/color_fondo"
+        app:theme="@style/Theme.MaterialComponents" />
+</LinearLayout>

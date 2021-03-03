@@ -184,7 +184,7 @@
 
     <string name="editText_email_usuario">Email</string>
     <string name="nombre_producto">StudyCo</string>
-    <string name="textViex_texto_splash_screen">DAW2</string>
+    <string name="textViex_texto_splash_screen">DAM2</string>
     <string name="textView_splash_screen_general_texto">CARGANDO...</string>
     <string name="logo_splash_screen_general">Logo de carga Splah Screen</string>
     <string name="textView_splash_screen_inicio_sesion_texto">INICIANDO SESIÓN...</string>
@@ -234,4 +234,13 @@
     <string name="textView_email_usuario_cuenta_nombre">Email</string>
     <string name="textView_telefono_usuario_cuenta_numero">Número</string>
     <string name="textView_localidad_usuario_cuenta_nombre">Nombre localidad</string>
+
+    <string name="imagen_google_maps">Imagen del icono de Google Maps</string>
+    <string name="button_entrar_mapa">Entrar</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="menu_inicio_localizacion">Localización</string>
+    <string name="button_mapa_tipo_1">HIBRIDO</string>
+    <string name="button_mapa_tipo_2">SATELITE</string>
+    <string name="button_mapa_tipo_3">TERRENO</string>
+    <string name="button_mapa_tipo_4">NORMAL</string>
 </resources>

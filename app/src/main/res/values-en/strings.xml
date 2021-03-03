@@ -184,7 +184,7 @@
 
     <string name="editText_email_usuario">Insert the email</string>
     <string name="nombre_producto">StudyCo</string>
-    <string name="textViex_texto_splash_screen">DAW2</string>
+    <string name="textViex_texto_splash_screen">DAM2</string>
     <string name="textView_splash_screen_general_texto">LOADING...</string>
     <string name="logo_splash_screen_general">Loading logo of Splah Screen</string>
     <string name="textView_splash_screen_inicio_sesion_texto">LOGGING IN...</string>
@@ -219,7 +219,7 @@
     <string name="helperText_descripcion_modificar_asignatura">Insert the new name for the subject</string>
 
     <string name="helperText_nombre_modificar_profesor">Insert the new teacher name</string>
-    <string name="helperText_asignatura_modificar_asignatura">Introduce la nueva asignatura que imparte el profesor</string>
+    <string name="helperText_asignatura_modificar_asignatura">Insert the new subject taught by the teacher</string>
     <string name="helperText_asignatura_modificar_profesor">Insert the new subject taught by the teacher</string>
     <string name="helperText_telefono_modificar_profesor">Insert the new teacher phone number</string>
     <string name="helperText_email_modificar_profesor">Insert the new teacher email</string>
@@ -237,4 +237,13 @@
     <string name="textView_email_usuario_cuenta_nombre">Email</string>
     <string name="textView_telefono_usuario_cuenta_numero">Number</string>
     <string name="textView_localidad_usuario_cuenta_nombre">City name</string>
+
+    <string name="imagen_google_maps">Google Maps´ icon</string>
+    <string name="button_entrar_mapa">Localizar</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="menu_inicio_localizacion">Localization</string>
+    <string name="button_mapa_tipo_1">HYBRID</string>
+    <string name="button_mapa_tipo_2">SATELlITE</string>
+    <string name="button_mapa_tipo_3">TERRAIN</string>
+    <string name="button_mapa_tipo_4">NORMAL</string>
 </resources>

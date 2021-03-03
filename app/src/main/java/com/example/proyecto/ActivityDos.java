@@ -44,6 +44,11 @@ public class ActivityDos extends AppCompatActivity {
                 startActivity(horario);
                 return true;
 
+            case R.id.menu_inicio_localizacion:
+                Intent localizacion = new Intent(this, ActivityLocalizacion.class);
+                startActivity(localizacion);
+                return true;
+
             case R.id.menu_inicio_cuenta:
                 Intent cuenta = new Intent(this, ActivityDoce.class);
                 startActivity(cuenta);

@@ -28,6 +28,12 @@
     </item>
 
     <item
+        android:id="@+id/menu_inicio_localizacion"
+        app:showAsAction="collapseActionView"
+        android:title="@string/menu_inicio_localizacion" >
+    </item>
+
+    <item
         android:id="@+id/menu_inicio_cuenta"
         app:showAsAction="collapseActionView"
         android:title="@string/menu_inicio_cuenta" >
