@@ -185,10 +185,10 @@
     <string name="editText_email_usuario">Email</string>
     <string name="nombre_producto">StudyCo</string>
     <string name="textViex_texto_splash_screen">DAM2</string>
-    <string name="textView_splash_screen_general_texto">CARGANDO...</string>
+    <string name="textView_splash_screen_general_texto">CARGANDO, &amp;#8230</string>
     <string name="logo_splash_screen_general">Logo de carga Splah Screen</string>
-    <string name="textView_splash_screen_inicio_sesion_texto">INICIANDO SESIÓN...</string>
-    <string name="textView_splash_screen_registrarse_texto">REGISTRANDO USUARIO...</string>
+    <string name="textView_splash_screen_inicio_sesion_texto">INICIANDO SESIÓN&#8230;</string>
+    <string name="textView_splash_screen_registrarse_texto">REGISTRANDO USUARIO&#8230;</string>
 
     <string name="helperText_nombre_anadir_alumno">Introduce el nombre del nuevo alumno</string>
     <string name="helperText_edad_anadir_alumno">Introduce la edad del nuevo alumno</string>
@@ -243,4 +243,10 @@
     <string name="button_mapa_tipo_2">SATELITE</string>
     <string name="button_mapa_tipo_3">TERRENO</string>
     <string name="button_mapa_tipo_4">NORMAL</string>
+
+    <string name="facebook_application_id" translatable="false">1161845414246545</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1161845414246545</string>
+
+    <string name="button_iniciar_sesion_google">Inicia sesión con Google</string>
+    <string name="textViex_texto_splash_screen_cerrar_sesion">CERRANDO SESIÓN&#8230;</string>
 </resources>

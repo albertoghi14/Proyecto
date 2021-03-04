@@ -39,7 +39,7 @@ public class ActivityDoce extends AppCompatActivity {
                                 new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        Intent cerrarSesion = new Intent(ActivityDoce.this, MainActivity.class);
+                                        Intent cerrarSesion = new Intent(ActivityDoce.this, SplashScreenCierreSesion.class);
                                         startActivity(cerrarSesion);
 
 

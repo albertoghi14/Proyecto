@@ -35,37 +35,39 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewTituloBorrarAsignatura" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonBorrarAsignatura"
-            app:theme="@style/Theme.MaterialComponents"
-            android:layout_width="194dp"
-            android:layout_height="62dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10sp"
-            android:text="@string/button_borrr_asignatura"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:backgroundTint="@color/color_fondo"
-            app:layout_constraintBottom_toTopOf="@+id/spinnerBorrarAsignatura"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.458"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonCancelarBorrarAsignatura"
-            app:layout_constraintVertical_bias="0.841"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonBorrarAsignatura"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10sp"
+        android:onClick="Borrar"
+        android:text="@string/button_borrr_asignatura"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="@color/color_fondo"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerBorrarAsignatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCancelarBorrarAsignatura"
+        app:layout_constraintVertical_bias="0.841"
+        app:theme="@style/Theme.MaterialComponents" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonCancelarBorrarAsignatura"
-            app:theme="@style/Theme.MaterialComponents"
-            android:layout_width="194dp"
-            android:layout_height="62dp"
-            android:layout_gravity="center"
-            android:text="@string/button_cancelar_borrar_asignatura"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:backgroundTint="@color/color_fondo"
-            app:layout_constraintBottom_toTopOf="@+id/buttonBorrarAsignatura"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.458"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.841"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCancelarBorrarAsignatura"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:onClick="Cancelar"
+        android:text="@string/button_cancelar_borrar_asignatura"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="@color/color_fondo"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBorrarAsignatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.841"
+        app:theme="@style/Theme.MaterialComponents" />
 
     </LinearLayout>

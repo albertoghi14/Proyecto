@@ -101,16 +101,17 @@
             android:layout_height="62dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10sp"
+            android:onClick="Anadir"
             android:text="@string/button_anadir_curso"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:backgroundTint="@color/color_fondo"
-            app:theme="@style/Theme.MaterialComponents"
             app:layout_constraintBottom_toTopOf="@+id/editTextAnadirDescripcionCurso"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.458"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonCancelarAnadirCurso"
-            app:layout_constraintVertical_bias="0.841"/>
+            app:layout_constraintVertical_bias="0.841"
+            app:theme="@style/Theme.MaterialComponents" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonCancelarAnadirCurso"
@@ -118,16 +119,17 @@
             android:layout_height="62dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10sp"
+            android:onClick="Cancelar"
             android:text="@string/button_cancelar_anadir_curso"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:backgroundTint="@color/color_fondo"
-            app:theme="@style/Theme.MaterialComponents"
             app:layout_constraintBottom_toTopOf="@+id/buttonAnadirCurso"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.458"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.841"/>
+            app:layout_constraintVertical_bias="0.841"
+            app:theme="@style/Theme.MaterialComponents" />
 
     </LinearLayout>
 </LinearLayout>

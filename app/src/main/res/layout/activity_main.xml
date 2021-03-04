@@ -13,17 +13,19 @@
         android:id="@+id/textView_titulo_pagina_principal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80sp"
         android:layout_gravity="center"
+        android:layout_marginTop="60sp"
         android:hint="@string/nombre_producto"
         android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColorHint="@color/colorBlanco"
-        android:textSize="80sp" />
+        android:textSize="80sp"
+        android:textStyle="bold|italic" />
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="40sp"
         android:layout_marginBottom="10sp"
         android:orientation="vertical">
 
@@ -91,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="45sp"
-            android:layout_marginBottom="80sp"
+            android:layout_marginBottom="15sp"
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
@@ -117,6 +119,19 @@
                 app:backgroundTint="@color/color_fondo"/>
         </LinearLayout>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonIniciarSesionGoogle"
+            android:layout_width="283dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/googleg_standard_color_18"
+            android:onClick="EntrarGoogle"
+            android:text="@string/button_iniciar_sesion_google"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:backgroundTint="@color/colorBlanco"
+            app:theme="@style/Theme.MaterialComponents" />
+
         <TextView
             android:id="@+id/textView_splash_screen_inicio_texto"
             android:layout_width="wrap_content"
@@ -124,6 +139,7 @@
             android:text="@string/textViex_texto_splash_screen"
             android:textSize="40sp"
             android:layout_gravity="center"
+            android:layout_marginTop="50sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

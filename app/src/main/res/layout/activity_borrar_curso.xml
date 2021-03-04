@@ -35,37 +35,39 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewTituloBorrarCurso" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonBorrarCurso"
-            app:theme="@style/Theme.MaterialComponents"
-            android:layout_width="194dp"
-            android:layout_height="62dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10sp"
-            android:text="@string/button_borrar_curso"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:backgroundTint="@color/color_fondo"
-            app:layout_constraintBottom_toTopOf="@+id/spinnerBorrarCurso"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.458"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonCancelarBorrarCurso"
-            app:layout_constraintVertical_bias="0.841"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonBorrarCurso"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10sp"
+        android:onClick="Borrar"
+        android:text="@string/button_borrar_curso"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="@color/color_fondo"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerBorrarCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCancelarBorrarCurso"
+        app:layout_constraintVertical_bias="0.841"
+        app:theme="@style/Theme.MaterialComponents" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonCancelarBorrarCurso"
-            app:theme="@style/Theme.MaterialComponents"
-            android:layout_width="194dp"
-            android:layout_height="62dp"
-            android:layout_gravity="center"
-            android:text="@string/button_cancelar_borrar_curso"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:backgroundTint="@color/color_fondo"
-            app:layout_constraintBottom_toTopOf="@+id/buttonBorrarCurso"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.458"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.841"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCancelarBorrarCurso"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:onClick="Cancelar"
+        android:text="@string/button_cancelar_borrar_curso"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="@color/color_fondo"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBorrarCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.841"
+        app:theme="@style/Theme.MaterialComponents" />
 
     </LinearLayout>

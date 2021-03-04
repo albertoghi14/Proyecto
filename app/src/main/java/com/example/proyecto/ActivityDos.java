@@ -30,7 +30,7 @@ public class ActivityDos extends AppCompatActivity {
                 return true;
 
             case R.id.menu_inicio_asignaturas:
-                Intent asignaturas = new Intent(this, SplashScreenGeneral.class);
+                Intent asignaturas = new Intent(this, ActivityTres.class);
                 startActivity(asignaturas);
                 return true;
 

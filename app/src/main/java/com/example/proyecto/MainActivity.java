@@ -1,5 +1,7 @@
 package com.example.proyecto;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
@@ -14,7 +16,25 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthCredential;
+import com.google.firebase.auth.GoogleAuthProvider;
+
+import java.util.Arrays;
+import java.util.List;
+
 import static com.example.proyecto.utilidades.Constantes.CAMPO_APELLIDOS_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_EMAIL_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_FECHA_NACIMIENTO;
@@ -33,12 +53,80 @@ public class MainActivity extends AppCompatActivity {
     ConexionSQLiteHelper helper ;
     private String usuariocad, passcad;
     private final static String CHANNEL_ID = "NOTIFICACION";
+    //Variable para gestionar FireBase
+    private FirebaseAuth mfirebaseAuth;
+    //Agregar cliente de inicio de sesión de Google
+    private GoogleSignInClient mGoogleSignInClient;
+
+    public static final int REQUEST_CODE = 1;
+    private String TAG = "GoogleSignInLoginActivity";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Base de datos
         helper = new ConexionSQLiteHelper(this, "Proyecto.db", null, 1);
+
+        //FireBase
+        mfirebaseAuth = FirebaseAuth.getInstance();
+
+        //Configurar Google Sign In
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+
+        //Crear un GoogleSignInClient con las opciones especificadas por el gso
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+
+    }
+
+    public void signIn(){
+        Intent signIn = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signIn, REQUEST_CODE);
+    }
+
+    public void EntrarGoogle(View view){
+        signIn();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_CODE){
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            if (task.isSuccessful()){
+                GoogleSignInAccount account = task.getResult();
+                Toast toastEntrarGoogle =
+                    Toast.makeText(getApplicationContext(),
+                            "Inicio de sesión con Google correcto", Toast.LENGTH_LONG);
+                toastEntrarGoogle.show();
+                fireBaseAuthWithGoogle(account.getIdToken());
+            } else {
+                Toast toastEntrarGoogleFallido =
+                    Toast.makeText(getApplicationContext(),
+                            "Inicio de sesión con Google incorrecto", Toast.LENGTH_LONG);
+                toastEntrarGoogleFallido.show();
+            }
+        }
+    }
+
+    private void fireBaseAuthWithGoogle(String idToken){
+        AuthCredential credencial = GoogleAuthProvider.getCredential(idToken, null);
+        mfirebaseAuth.signInWithCredential(credencial).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+                    Intent entrarAppGoogle = new Intent(MainActivity.this, SplashScreenInicioSesion.class);
+                    startActivity(entrarAppGoogle);
+                    createNotification();
+                }
+            }
+        });
     }
 
     public void Entrar(View view){

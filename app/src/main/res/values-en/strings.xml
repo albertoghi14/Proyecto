@@ -185,10 +185,10 @@
     <string name="editText_email_usuario">Insert the email</string>
     <string name="nombre_producto">StudyCo</string>
     <string name="textViex_texto_splash_screen">DAM2</string>
-    <string name="textView_splash_screen_general_texto">LOADING...</string>
+    <string name="textView_splash_screen_general_texto">LOADING&#8230;</string>
     <string name="logo_splash_screen_general">Loading logo of Splah Screen</string>
-    <string name="textView_splash_screen_inicio_sesion_texto">LOGGING IN...</string>
-    <string name="textView_splash_screen_registrarse_texto">SIGNING IN...</string>
+    <string name="textView_splash_screen_inicio_sesion_texto">LOGGING IN&#8230;</string>
+    <string name="textView_splash_screen_registrarse_texto">SIGNING IN&#8230;</string>
 
     <string name="helperText_nombre_anadir_alumno">Insert the name of the new alumn</string>
     <string name="helperText_edad_anadir_alumno">Insert the age of the new alumn</string>
@@ -246,4 +246,7 @@
     <string name="button_mapa_tipo_2">SATELlITE</string>
     <string name="button_mapa_tipo_3">TERRAIN</string>
     <string name="button_mapa_tipo_4">NORMAL</string>
+
+    <string name="button_iniciar_sesion_google">Sign in with Google</string>
+    <string name="textViex_texto_splash_screen_cerrar_sesion">LOGGING OUT&#8230;</string>
 </resources>
