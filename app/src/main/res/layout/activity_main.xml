@@ -121,11 +121,11 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonIniciarSesionGoogle"
-            android:layout_width="283dp"
+            android:layout_width="323dp"
             android:layout_height="60sp"
             android:layout_gravity="center"
             android:background="#FFFFFF"
-            android:drawableStart="@drawable/googleg_standard_color_18"
+            android:drawableStart="@drawable/fui_ic_googleg_color_24dp"
             android:onClick="EntrarGoogle"
             android:text="@string/button_iniciar_sesion_google"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"

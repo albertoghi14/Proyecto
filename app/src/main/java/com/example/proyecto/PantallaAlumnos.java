@@ -15,14 +15,14 @@ import com.example.proyecto.entidades.Alumno;
 
 import java.util.ArrayList;
 
-public class ActivityCinco extends AppCompatActivity {
+public class PantallaAlumnos extends AppCompatActivity {
     private ListView alumnos;
     private AdaptadorAlumno adaptadorAlumnos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cinco);
+        setContentView(R.layout.pantalla_alumnos);
 
         alumnos = findViewById(R.id.listView_alumnos);
         adaptadorAlumnos = new AdaptadorAlumno(this,GetArrayItems());
@@ -62,12 +62,12 @@ public class ActivityCinco extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_alumno:
-                Intent anadirAlumno = new Intent(ActivityCinco.this, AnadirAlumno.class);
+                Intent anadirAlumno = new Intent(PantallaAlumnos.this, AnadirAlumno.class);
                 startActivity(anadirAlumno);
                 return true;
 
             case R.id.menu_eliminar_alumno:
-                Intent borrarAlumno = new Intent(ActivityCinco.this, BorrarAlumno.class);
+                Intent borrarAlumno = new Intent(PantallaAlumnos.this, BorrarAlumno.class);
                 startActivity(borrarAlumno);
                 return true;
 
@@ -90,7 +90,7 @@ public class ActivityCinco extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.menu_contextual_alumno_modificar:
-                Intent modificarAlumno = new Intent(ActivityCinco.this, ModificarAlumno.class);
+                Intent modificarAlumno = new Intent(PantallaAlumnos.this, ModificarAlumno.class);
                 startActivity(modificarAlumno);
                 return true;
             case R.id.menu_contextual_alumno_enviar_email:

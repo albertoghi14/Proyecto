@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setPriority(NotificationCompat.PRIORITY_MAX);
         builder.setDefaults(Notification.DEFAULT_SOUND);
 
-        builder.setContentIntent(PendingIntent.getActivity(MainActivity.this, (int) System.currentTimeMillis(), new Intent(MainActivity.this, ActivityOnce.class), 0));
+        builder.setContentIntent(PendingIntent.getActivity(MainActivity.this, (int) System.currentTimeMillis(), new Intent(MainActivity.this, PantallaHorario.class), 0));
 
         NotificationManager nmanager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         nmanager.notify(0, builder.build());
@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Registrar(View view){
-        Intent registrar = new Intent(this, ActivityUno.class);
+        Intent registrar = new Intent(this, FormularioRegistro.class);
         startActivity(registrar);
 
         Toast toastCrear =

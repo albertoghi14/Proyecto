@@ -15,12 +15,12 @@ public class BorrarAsignatura extends AppCompatActivity {
     }
 
     public void Borrar(View view){
-        Intent borrar = new Intent(this, ActivityCuatro.class);
+        Intent borrar = new Intent(this, PantallaAsignaturas.class);
         startActivity(borrar);
     }
 
     public void Cancelar(View view){
-        Intent cancelar = new Intent(this, ActivityCuatro.class);
+        Intent cancelar = new Intent(this, PantallaAsignaturas.class);
         startActivity(cancelar);
     }
 }

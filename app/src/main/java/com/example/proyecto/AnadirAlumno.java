@@ -15,12 +15,12 @@ public class AnadirAlumno extends AppCompatActivity {
     }
 
     public void Anadir(View view){
-        Intent anadir = new Intent(this, ActivityCinco.class);
+        Intent anadir = new Intent(this, PantallaAlumnos.class);
         startActivity(anadir);
     }
 
     public void Cancelar(View view){
-        Intent cancelar = new Intent(this, ActivityCinco.class);
+        Intent cancelar = new Intent(this, PantallaAlumnos.class);
         startActivity(cancelar);
     }
 }

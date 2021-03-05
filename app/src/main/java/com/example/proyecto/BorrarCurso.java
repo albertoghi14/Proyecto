@@ -15,12 +15,12 @@ public class BorrarCurso extends AppCompatActivity {
     }
 
     public void Borrar(View view){
-        Intent borrar = new Intent(this, ActivityDiez.class);
+        Intent borrar = new Intent(this, PantallaCursosHorario.class);
         startActivity(borrar);
     }
 
     public void Cancelar(View view){
-        Intent cancelar = new Intent(this, ActivityDiez.class);
+        Intent cancelar = new Intent(this, PantallaCursosHorario.class);
         startActivity(cancelar);
     }
 }

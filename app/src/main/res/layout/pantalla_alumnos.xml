@@ -4,10 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_fondo"
-    tools:context=".ActivityCuatro">
+    tools:context=".PantallaAlumnos">
 
     <ListView
-        android:id="@+id/listView_asignaturas"
+        android:id="@+id/listView_alumnos"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </RelativeLayout>

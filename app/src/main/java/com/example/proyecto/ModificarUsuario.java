@@ -23,14 +23,14 @@ public class ModificarUsuario extends AppCompatActivity {
     }
 
     public void Modificar(View view){
-        Intent modificar = new Intent(this, ActivityDoce.class);
+        Intent modificar = new Intent(this, PantallaInformacionCuenta.class);
         startActivity(modificar);
         createNotificationChannel();
         createNotification();
     }
 
     public void Cancelar(View view){
-        Intent cancelar = new Intent(this, ActivityDoce.class);
+        Intent cancelar = new Intent(this, PantallaInformacionCuenta.class);
         startActivity(cancelar);
     }
 
@@ -55,7 +55,7 @@ public class ModificarUsuario extends AppCompatActivity {
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
         builder.setDefaults(Notification.DEFAULT_SOUND);
 
-        builder.setContentIntent(PendingIntent.getActivity(ModificarUsuario.this, (int) System.currentTimeMillis(), new Intent(ModificarUsuario.this, ActivityDos.class), 0));
+        builder.setContentIntent(PendingIntent.getActivity(ModificarUsuario.this, (int) System.currentTimeMillis(), new Intent(ModificarUsuario.this, PantallaPrincipal.class), 0));
 
         NotificationManager nmanager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         nmanager.notify(0, builder.build());

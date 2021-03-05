@@ -37,7 +37,7 @@ public class SplashScreenInicioSesion extends AppCompatActivity {
                     i++;
                 } else {
                     tarea.cancel();
-                    Intent intent = new Intent(SplashScreenInicioSesion.this, ActivityDos.class);
+                    Intent intent = new Intent(SplashScreenInicioSesion.this, PantallaPrincipal.class);
                     startActivity(intent);
                     finish();
                 }

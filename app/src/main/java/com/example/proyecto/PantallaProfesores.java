@@ -12,7 +12,7 @@ import com.example.proyecto.entidades.Profesor;
 
 import java.util.ArrayList;
 
-public class ActivityNueve extends AppCompatActivity {
+public class PantallaProfesores extends AppCompatActivity {
 
     ListView lista;
     AdaptadorProfesor adaptador;
@@ -20,7 +20,7 @@ public class ActivityNueve extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nueve);
+        setContentView(R.layout.pantalla_profesores);
 
         lista = findViewById(R.id.listView_profesores);
         adaptador = new AdaptadorProfesor(this, GetArrayItems());
@@ -52,17 +52,17 @@ public class ActivityNueve extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_profesores:
-                Intent anadirProfesor = new Intent(ActivityNueve.this, AnadirProfesor.class);
+                Intent anadirProfesor = new Intent(PantallaProfesores.this, AnadirProfesor.class);
                 startActivity(anadirProfesor);
                 return true;
 
             case R.id.menu_modificar_profesor:
-                Intent modificarProfesor = new Intent(ActivityNueve.this, ModificarProfesor.class);
+                Intent modificarProfesor = new Intent(PantallaProfesores.this, ModificarProfesor.class);
                 startActivity(modificarProfesor);
                 return true;
 
             case R.id.menu_eliminar_profesor:
-                Intent borrarProfesor = new Intent(ActivityNueve.this, BorrarProfesor.class);
+                Intent borrarProfesor = new Intent(PantallaProfesores.this, BorrarProfesor.class);
                 startActivity(borrarProfesor);
                 return true;
 

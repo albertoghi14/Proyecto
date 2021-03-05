@@ -10,12 +10,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.proyecto.entidades.Usuario;
 import com.google.android.material.textfield.TextInputLayout;
 
 import static com.example.proyecto.utilidades.Constantes.CAMPO_APELLIDOS_USUARIO;
@@ -30,7 +28,7 @@ import static com.example.proyecto.utilidades.Constantes.CAMPO_TELEFONO_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_USERNAME_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.TABLA_USUARIO;
 
-public class ActivityUno extends AppCompatActivity {
+public class FormularioRegistro extends AppCompatActivity {
 
     Button btnRegisUsu, btnCancRegis;
     TextInputLayout txtNomUsu, txtApellUsu, txtLocUsu, txtTelfUsu, txtUserUsu, txtPassUsu, txtPasswUsu, txtEmailUsu;
@@ -46,7 +44,7 @@ public class ActivityUno extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uno);
+        setContentView(R.layout.formulario_registro);
 
         btnRegisUsu =  findViewById(R.id.buttonRegistrarUsuario);
         btnCancRegis =  findViewById(R.id.buttonCancelarRegistrarUsuario);

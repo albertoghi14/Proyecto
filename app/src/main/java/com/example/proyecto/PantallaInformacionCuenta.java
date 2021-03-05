@@ -15,9 +15,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
-public class ActivityDoce extends AppCompatActivity {
+public class PantallaInformacionCuenta extends AppCompatActivity {
     //Variable para gestionar FireBase
     private FirebaseAuth mAuth;
 
@@ -28,7 +27,7 @@ public class ActivityDoce extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doce);
+        setContentView(R.layout.pantalla_informacion_cuenta);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -52,7 +51,7 @@ public class ActivityDoce extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_opciones_cuenta_configuracion:
-                Intent configuracionCuenta = new Intent(ActivityDoce.this, ModificarUsuario.class);
+                Intent configuracionCuenta = new Intent(PantallaInformacionCuenta.this, ModificarUsuario.class);
                 startActivity(configuracionCuenta);
                 return true;
 
@@ -71,7 +70,7 @@ public class ActivityDoce extends AppCompatActivity {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 if (task.isSuccessful()){
-                                                    Intent cerrarSesion = new Intent(ActivityDoce.this, SplashScreenCierreSesion.class);
+                                                    Intent cerrarSesion = new Intent(PantallaInformacionCuenta.this, SplashScreenCierreSesion.class);
                                                     startActivity(cerrarSesion);
                                                 } else {
                                                     Toast.makeText(getApplicationContext(), "No se pudo cerrar sesión con Google", Toast.LENGTH_LONG).show();

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/color_fondo"
     android:orientation="vertical"
-    tools:context=".ActivityUno">
+    tools:context=".FormularioRegistro">
 
 
     <ScrollView

@@ -19,14 +19,14 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class ActivityMapa extends FragmentActivity implements OnMapReadyCallback {
+public class PantallaMapa extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mapa);
+        setContentView(R.layout.pantalla_mapa);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -87,7 +87,7 @@ public class ActivityMapa extends FragmentActivity implements OnMapReadyCallback
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setMyLocationButtonEnabled(false);
 
-        LocationManager locationManager = (LocationManager) ActivityMapa.this.getSystemService(Context.LOCATION_SERVICE);
+        LocationManager locationManager = (LocationManager) PantallaMapa.this.getSystemService(Context.LOCATION_SERVICE);
         LocationListener locationListener = new LocationListener() {
             //Preguntar por mi ubicacion
             @Override

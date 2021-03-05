@@ -32,9 +32,9 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".ActivityMapa"
+            android:name=".PantallaMapa"
             android:label="@string/title_activity_mapa" />
-        <activity android:name=".ActivityLocalizacion" />
+        <activity android:name=".PantallaLocalizacion" />
         <activity android:name=".SplashScreenRegistrarse" />
         <activity android:name=".SplashScreenInicioSesion" />
         <activity android:name=".SplashScreenInicio">
@@ -118,22 +118,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityTrece" />
-        <activity android:name=".ActivityDoce" />
-        <activity android:name=".ActivityOnce" />
-        <activity android:name=".ActivityDiez" />
-        <activity android:name=".ActivityNueve" />
-        <activity android:name=".ActivityOcho" />
+        <activity android:name=".PantallaInformacionCuenta" />
+        <activity android:name=".PantallaHorario" />
+        <activity android:name=".PantallaCursosHorario" />
+        <activity android:name=".PantallaProfesores" />
+        <activity android:name=".PantallaCursosProfesores" />
         <activity android:name=".ActivitySiete" />
         <activity android:name=".ActivitySeis" />
-        <activity android:name=".ActivityCinco" />
-        <activity android:name=".ActivityDos">
+        <activity android:name=".PantallaAlumnos" />
+        <activity android:name=".PantallaPrincipal">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityCuatro" />
-        <activity android:name=".ActivityTres" />
-        <activity android:name=".ActivityUno">
+        <activity android:name=".PantallaAsignaturas" />
+        <activity android:name=".PantallaCursosAsignaturas" />
+        <activity android:name=".FormularioRegistro">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

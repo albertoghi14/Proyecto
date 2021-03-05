@@ -15,7 +15,7 @@ import com.example.proyecto.entidades.Curso;
 
 import java.util.ArrayList;
 
-public class ActivityOcho extends AppCompatActivity {
+public class PantallaCursosAsignaturas extends AppCompatActivity {
 
     ListView lista;
     AdaptadorCurso adaptador;
@@ -23,7 +23,7 @@ public class ActivityOcho extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ocho);
+        setContentView(R.layout.pantalla_cursos_asignaturas);
 
         lista = findViewById(R.id.listView_cursos);
         adaptador = new AdaptadorCurso(this, GetArrayItems());
@@ -35,34 +35,37 @@ public class ActivityOcho extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(), "posicion " + (i + 1) + personas[i], Toast.LENGTH_SHORT).show();
                 switch (posicion) {
                     case 0 :
-                        Toast.makeText(getApplicationContext(), "Profesores DAM 1", Toast.LENGTH_SHORT).show();
-                        mostrarProfesores(view);
+                        Toast.makeText(getApplicationContext(), "DAM 1", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
                         break;
                     case 1 :
-                        Toast.makeText(getApplicationContext(), "Profesores DAM 2", Toast.LENGTH_SHORT).show();
-                        mostrarProfesores(view);
+                        Toast.makeText(getApplicationContext(), "DAM 2", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
                         break;
                     case 2 :
-                        Toast.makeText(getApplicationContext(), "Profesores DAW 1", Toast.LENGTH_SHORT).show();
-                        mostrarProfesores(view);
+                        Toast.makeText(getApplicationContext(), "DAW 1", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
                         break;
                     case 3 :
-                        Toast.makeText(getApplicationContext(), "Profesores DAW 2", Toast.LENGTH_SHORT).show();
-                        mostrarProfesores(view);
+                        Toast.makeText(getApplicationContext(), "DAW 2", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
                         break;
                     case 4 :
-                        Toast.makeText(getApplicationContext(), "Profesores ASIR 1", Toast.LENGTH_SHORT).show();
-                        mostrarProfesores(view);
+                        Toast.makeText(getApplicationContext(), "ASIR 1", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
                         break;
                     case 5 :
-                        Toast.makeText(getApplicationContext(), "Profesores ASIR 2", Toast.LENGTH_SHORT).show();
-                        mostrarProfesores(view);
+                        Toast.makeText(getApplicationContext(), "ASIR 2", Toast.LENGTH_SHORT).show();
+                        mostrarAsignaturas(view);
                         break;
                     default:
                         Toast.makeText(getApplicationContext(), "Accion incorrecta", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+
+
     }
 
     private ArrayList<Curso> GetArrayItems(){
@@ -78,14 +81,15 @@ public class ActivityOcho extends AppCompatActivity {
         return listaCursos;
     }
 
-    public void mostrarProfesores(View view){
-        Intent mostrarProfesores = new Intent(ActivityOcho.this, ActivityNueve.class);
-        startActivity(mostrarProfesores);
+
+    public void mostrarAsignaturas(View view){
+        Intent mostrarAsignaturas = new Intent(PantallaCursosAsignaturas.this, PantallaAsignaturas.class);
+        startActivity(mostrarAsignaturas);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_cursos_profesores, menu);
+        getMenuInflater().inflate(R.menu.menu_cursos_asignaturas, menu);
         return true;
     }
 
@@ -93,18 +97,18 @@ public class ActivityOcho extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
 
-            case R.id.menu_anadir_cursos_profesores:
-                Intent anadirCurso = new Intent(ActivityOcho.this, AnadirCurso.class);
+            case R.id.menu_anadir_cursos_asignaturas:
+                Intent anadirCurso = new Intent(PantallaCursosAsignaturas.this, AnadirCurso.class);
                 startActivity(anadirCurso);
                 return true;
 
-            case R.id.menu_modificar_cursos_profesores:
-                Intent modificarCurso = new Intent(ActivityOcho.this, ModificarCurso.class);
+            case R.id.menu_modificar_cursos_asignaturas:
+                Intent modificarCurso = new Intent(PantallaCursosAsignaturas.this, ModificarCurso.class);
                 startActivity(modificarCurso);
                 return true;
 
-            case R.id.menu_eliminar_cursos_profesores:
-                Intent borrarCurso = new Intent(ActivityOcho.this, BorrarCurso.class);
+            case R.id.menu_eliminar_cursos_asignaturas:
+                Intent borrarCurso= new Intent(PantallaCursosAsignaturas.this, BorrarCurso.class);
                 startActivity(borrarCurso);
                 return true;
 
@@ -112,4 +116,5 @@ public class ActivityOcho extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }

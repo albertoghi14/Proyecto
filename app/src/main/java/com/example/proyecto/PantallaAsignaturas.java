@@ -19,14 +19,14 @@ import com.example.proyecto.entidades.Asignatura;
 
 import java.util.ArrayList;
 
-public class ActivityCuatro extends AppCompatActivity {
+public class PantallaAsignaturas extends AppCompatActivity {
     ListView lista;
     AdaptadorAsignatura adaptador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuatro);
+        setContentView(R.layout.pantalla_asignaturas);
 
         lista = findViewById(R.id.listView_asignaturas);
         adaptador = new AdaptadorAsignatura(this, GetArrayItems());
@@ -82,7 +82,7 @@ public class ActivityCuatro extends AppCompatActivity {
     }
 
     public void mostrarAlumnos(View view){
-        Intent mostrarAlumnos = new Intent(ActivityCuatro.this, ActivityCinco.class);
+        Intent mostrarAlumnos = new Intent(PantallaAsignaturas.this, PantallaAlumnos.class);
         startActivity(mostrarAlumnos);
     }
 
@@ -97,17 +97,17 @@ public class ActivityCuatro extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_asignaturas:
-                Intent anadirAsignatura = new Intent(ActivityCuatro.this, AnadirAsignatura.class);
+                Intent anadirAsignatura = new Intent(PantallaAsignaturas.this, AnadirAsignatura.class);
                 startActivity(anadirAsignatura);
                 return true;
 
             case R.id.menu_modificar_asignaturas:
-                Intent modificarAsignatura = new Intent(ActivityCuatro.this, ModificarAsignatura.class);
+                Intent modificarAsignatura = new Intent(PantallaAsignaturas.this, ModificarAsignatura.class);
                 startActivity(modificarAsignatura);
                 return true;
 
             case R.id.menu_eliminar_asignaturas:
-                Intent borrarAsignatura = new Intent(ActivityCuatro.this, BorrarAsignatura.class);
+                Intent borrarAsignatura = new Intent(PantallaAsignaturas.this, BorrarAsignatura.class);
                 startActivity(borrarAsignatura);
                 return true;
 

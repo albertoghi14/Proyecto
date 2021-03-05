@@ -15,12 +15,12 @@ public class ModificarProfesor extends AppCompatActivity {
     }
 
     public void Modificar(View view){
-        Intent modificar = new Intent(this, ActivityNueve.class);
+        Intent modificar = new Intent(this, PantallaProfesores.class);
         startActivity(modificar);
     }
 
     public void Cancelar(View view){
-        Intent cancelar = new Intent(this, ActivityNueve.class);
+        Intent cancelar = new Intent(this, PantallaProfesores.class);
         startActivity(cancelar);
     }
 }

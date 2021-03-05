@@ -15,7 +15,7 @@ import com.example.proyecto.entidades.Curso;
 
 import java.util.ArrayList;
 
-public class ActivityDiez extends AppCompatActivity {
+public class PantallaCursosHorario extends AppCompatActivity {
 
     ListView lista;
     AdaptadorCurso adaptador;
@@ -23,7 +23,7 @@ public class ActivityDiez extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diez);
+        setContentView(R.layout.pantalla_cursos_horario);
 
         lista = findViewById(R.id.listView_cursos);
         adaptador = new AdaptadorCurso(this, GetArrayItems());
@@ -79,7 +79,7 @@ public class ActivityDiez extends AppCompatActivity {
     }
 
     public void mostrarHorario(View view){
-        Intent mostrarHorario = new Intent(ActivityDiez.this, ActivityOnce.class);
+        Intent mostrarHorario = new Intent(PantallaCursosHorario.this, PantallaHorario.class);
         startActivity(mostrarHorario);
     }
 
@@ -94,17 +94,17 @@ public class ActivityDiez extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.menu_anadir_cursos_horarios:
-                Intent anadirCurso = new Intent(ActivityDiez.this, AnadirCurso.class);
+                Intent anadirCurso = new Intent(PantallaCursosHorario.this, AnadirCurso.class);
                 startActivity(anadirCurso);
                 return true;
 
             case R.id.menu_modificar_cursos_horarios:
-                Intent modificarCurso = new Intent(ActivityDiez.this, ModificarCurso.class);
+                Intent modificarCurso = new Intent(PantallaCursosHorario.this, ModificarCurso.class);
                 startActivity(modificarCurso);
                 return true;
 
             case R.id.menu_eliminar_cursos_horarios:
-                Intent borrarCurso = new Intent(ActivityDiez.this, BorrarCurso.class);
+                Intent borrarCurso = new Intent(PantallaCursosHorario.this, BorrarCurso.class);
                 startActivity(borrarCurso);
                 return true;
 

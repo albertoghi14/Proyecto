@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_fondo"
-    tools:context=".ActivityOcho">
+    tools:context=".PantallaCursosAsignaturas">
 
     <ListView
         android:id="@+id/listView_cursos"

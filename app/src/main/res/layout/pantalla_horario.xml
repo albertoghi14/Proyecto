@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_fondo"
-    tools:context=".ActivityOnce">
+    tools:context=".PantallaHorario">
 
     <CalendarView
         android:id="@+id/calendarView_calendario_horario"

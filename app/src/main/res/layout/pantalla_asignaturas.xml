@@ -4,11 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_fondo"
-    tools:context=".ActivityDiez">
+    tools:context=".PantallaAsignaturas">
 
     <ListView
-        android:id="@+id/listView_cursos"
+        android:id="@+id/listView_asignaturas"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </RelativeLayout>

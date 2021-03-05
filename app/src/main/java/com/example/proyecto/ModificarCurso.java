@@ -15,12 +15,12 @@ public class ModificarCurso extends AppCompatActivity {
     }
 
     public void Modificar(View view){
-        Intent modificar = new Intent(this, ActivityDiez.class);
+        Intent modificar = new Intent(this, PantallaCursosHorario.class);
         startActivity(modificar);
     }
 
     public void Cancelar(View view){
-        Intent cancelar = new Intent(this, ActivityDiez.class);
+        Intent cancelar = new Intent(this, PantallaCursosHorario.class);
         startActivity(cancelar);
     }
 }
