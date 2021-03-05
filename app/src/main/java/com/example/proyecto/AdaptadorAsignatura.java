@@ -6,9 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
 import com.example.proyecto.entidades.Asignatura;
-
 import java.util.ArrayList;
 
 public class AdaptadorAsignatura extends BaseAdapter {
@@ -41,9 +39,9 @@ public class AdaptadorAsignatura extends BaseAdapter {
         Asignatura asignatura = (Asignatura) getItem(position);
 
         convertView = LayoutInflater.from(context).inflate(R.layout.item_asignatura, null);
-        TextView siglasAsignatura = (TextView) convertView.findViewById(R.id.textView_siglas_asignatura);
-        TextView descripcionAsignatura = (TextView) convertView.findViewById(R.id.textView_descripcion_asignatura);
-        TextView aulaAsignatura = (TextView) convertView.findViewById(R.id.textView_aula_asignatura);
+        TextView siglasAsignatura = convertView.findViewById(R.id.textView_siglas_asignatura);
+        TextView descripcionAsignatura = convertView.findViewById(R.id.textView_descripcion_asignatura);
+        TextView aulaAsignatura = convertView.findViewById(R.id.textView_aula_asignatura);
 
         siglasAsignatura.setText(asignatura.getSiglasAsignatura());
         descripcionAsignatura.setText(asignatura.getDescripcionAsignatura());

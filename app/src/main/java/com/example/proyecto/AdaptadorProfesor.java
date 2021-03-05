@@ -42,11 +42,11 @@ public class AdaptadorProfesor extends BaseAdapter {
         Profesor profesor = (Profesor) getItem(position);
 
         convertView = LayoutInflater.from(context).inflate(R.layout.item_profesor,null);
-        ImageView foto = (ImageView) convertView.findViewById(R.id.imageView_foto_item_profesor);
-        TextView nombre = (TextView) convertView.findViewById(R.id.textView_nombre_item_profesor);
-        TextView asignaturas = (TextView) convertView.findViewById(R.id.textView_asignaturas_profesor);
-        TextView email = (TextView) convertView.findViewById(R.id.textView_email_item_profesor);
-        TextView telefono = (TextView) convertView.findViewById(R.id.textView_telefono_item_profesor);
+        ImageView foto = convertView.findViewById(R.id.imageView_foto_item_profesor);
+        TextView nombre = convertView.findViewById(R.id.textView_nombre_item_profesor);
+        TextView asignaturas = convertView.findViewById(R.id.textView_asignaturas_profesor);
+        TextView email = convertView.findViewById(R.id.textView_email_item_profesor);
+        TextView telefono = convertView.findViewById(R.id.textView_telefono_item_profesor);
 
         foto.setImageResource(profesor.getFoto());
         nombre.setText(profesor.getNombreProfesor());

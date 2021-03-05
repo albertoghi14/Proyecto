@@ -48,30 +48,30 @@ public class ActivityUno extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uno);
 
-        btnRegisUsu = (Button) findViewById(R.id.buttonRegistrarUsuario);
-        btnCancRegis = (Button) findViewById(R.id.buttonCancelarRegistrarUsuario);
-        txtNomUsu = (TextInputLayout) findViewById(R.id.editTextNombreUsuario);
-        txtApellUsu = (TextInputLayout) findViewById(R.id.editTextApellidosUsuario);
-        txtLocUsu = (TextInputLayout) findViewById(R.id.editTextLocalidadUsuario);
-        txtTelfUsu = (TextInputLayout) findViewById(R.id.editTextTelefonoUsuario);
-        txtUserUsu = (TextInputLayout) findViewById(R.id.editTextUsernameUsuario);
-        txtPassUsu = (TextInputLayout) findViewById(R.id.editTextPasswordUsuario);
-        txtPasswUsu = (TextInputLayout) findViewById(R.id.editTextPasswordConfirmarUsuario);
-        txtEmailUsu = (TextInputLayout) findViewById(R.id.editTextEmailUsuario);
-        checkUsuHomb = (CheckBox) findViewById(R.id.checkBoxSexoHombre);
-        checkUsuMuj = (CheckBox) findViewById(R.id.checkBoxSexoMujer);
-        radTermUno = (RadioButton) findViewById(R.id.radioButtonTerminosUno);
-        radTermDos = (RadioButton) findViewById(R.id.radioButtonTerminosDos);
+        btnRegisUsu =  findViewById(R.id.buttonRegistrarUsuario);
+        btnCancRegis =  findViewById(R.id.buttonCancelarRegistrarUsuario);
+        txtNomUsu =  findViewById(R.id.editTextNombreUsuario);
+        txtApellUsu =  findViewById(R.id.editTextApellidosUsuario);
+        txtLocUsu =  findViewById(R.id.editTextLocalidadUsuario);
+        txtTelfUsu =  findViewById(R.id.editTextTelefonoUsuario);
+        txtUserUsu =  findViewById(R.id.editTextUsernameUsuario);
+        txtPassUsu =  findViewById(R.id.editTextPasswordUsuario);
+        txtPasswUsu =  findViewById(R.id.editTextPasswordConfirmarUsuario);
+        txtEmailUsu =  findViewById(R.id.editTextEmailUsuario);
+        checkUsuHomb =  findViewById(R.id.checkBoxSexoHombre);
+        checkUsuMuj = findViewById(R.id.checkBoxSexoMujer);
+        radTermUno = findViewById(R.id.radioButtonTerminosUno);
+        radTermDos =  findViewById(R.id.radioButtonTerminosDos);
 
         String[] paises = getResources().getStringArray(R.array.array_paises);
         String[] dias = getResources().getStringArray(R.array.array_dias);
         String[] meses = getResources().getStringArray(R.array.array_meses);
         String[] anos = getResources().getStringArray(R.array.array_anos);
 
-        listaPaises = (Spinner) findViewById(R.id.spinnerNacionalidadUsuario);
-        listaDias = (Spinner) findViewById(R.id.spinnerDiaUsuario);
-        listaMeses = (Spinner) findViewById(R.id.spinnerMesUsuario);
-        listaAnos = (Spinner) findViewById(R.id.spinnerAnoUsuario);
+        listaPaises =  findViewById(R.id.spinnerNacionalidadUsuario);
+        listaDias =  findViewById(R.id.spinnerDiaUsuario);
+        listaMeses = findViewById(R.id.spinnerMesUsuario);
+        listaAnos =  findViewById(R.id.spinnerAnoUsuario);
 
         ArrayAdapter<String> adapterPais = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, paises);
         listaPaises.setAdapter(adapterPais);
@@ -79,8 +79,7 @@ public class ActivityUno extends AppCompatActivity {
         listaDias.setAdapter(adapterDia);
         ArrayAdapter<String> adapterMes = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, meses);
         listaMeses.setAdapter(adapterMes);
-        ArrayAdapter<String> adapterAno;
-        adapterAno = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, anos);
+        ArrayAdapter<String> adapterAno = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, anos);
         listaAnos.setAdapter(adapterAno);
     }
 

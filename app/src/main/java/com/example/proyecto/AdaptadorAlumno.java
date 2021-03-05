@@ -7,9 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.proyecto.entidades.Alumno;
-
 import java.util.ArrayList;
 
 public class AdaptadorAlumno extends BaseAdapter {
@@ -41,13 +39,13 @@ public class AdaptadorAlumno extends BaseAdapter {
         Alumno alumno = (Alumno) getItem(position);
 
         convertView = LayoutInflater.from(context).inflate(R.layout.item_alumno,null);
-        ImageView foto = (ImageView) convertView.findViewById(R.id.imageView_foto_item_alumno);
-        TextView nombre = (TextView) convertView.findViewById(R.id.textView_nombre_item_alumno);
-        TextView edad = (TextView) convertView.findViewById(R.id.textView_edad_item_alumno);
-        TextView email = (TextView) convertView.findViewById(R.id.textView_email_item_alumno);
-        TextView direccion = (TextView) convertView.findViewById(R.id.textView_direccion_item_alumno);
-        TextView domicilio = (TextView) convertView.findViewById(R.id.textView_domicilio_item_alumno);
-        TextView telefono = (TextView) convertView.findViewById(R.id.textView_telefono_item_alumno);
+        ImageView foto = convertView.findViewById(R.id.imageView_foto_item_alumno);
+        TextView nombre = convertView.findViewById(R.id.textView_nombre_item_alumno);
+        TextView edad = convertView.findViewById(R.id.textView_edad_item_alumno);
+        TextView email = convertView.findViewById(R.id.textView_email_item_alumno);
+        TextView direccion = convertView.findViewById(R.id.textView_direccion_item_alumno);
+        TextView domicilio = convertView.findViewById(R.id.textView_domicilio_item_alumno);
+        TextView telefono = convertView.findViewById(R.id.textView_telefono_item_alumno);
 
         foto.setImageResource(alumno.getFoto());
         nombre.setText(alumno.getNombre());

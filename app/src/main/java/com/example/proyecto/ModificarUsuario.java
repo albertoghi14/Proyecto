@@ -3,11 +3,13 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,12 +25,22 @@ public class ModificarUsuario extends AppCompatActivity {
     public void Modificar(View view){
         Intent modificar = new Intent(this, ActivityDoce.class);
         startActivity(modificar);
+        createNotificationChannel();
         createNotification();
     }
 
     public void Cancelar(View view){
         Intent cancelar = new Intent(this, ActivityDoce.class);
         startActivity(cancelar);
+    }
+
+    private void createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "NOTIFICACION";
+            NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
     }
 
     private void createNotification() {

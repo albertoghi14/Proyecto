@@ -24,7 +24,7 @@ public class ActivityCinco extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cinco);
 
-        alumnos = (ListView) findViewById(R.id.listView_alumnos);
+        alumnos = findViewById(R.id.listView_alumnos);
         adaptadorAlumnos = new AdaptadorAlumno(this,GetArrayItems());
         alumnos.setAdapter(adaptadorAlumnos);
 

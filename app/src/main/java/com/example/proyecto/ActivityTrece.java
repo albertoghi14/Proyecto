@@ -22,7 +22,7 @@ public class ActivityTrece extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trece);
 
-        lista = (ListView) findViewById(R.id.listView_cursos);
+        lista = findViewById(R.id.listView_cursos);
         adaptador = new AdaptadorAsignatura(this, GetArrayItems());
         lista.setAdapter(adaptador);
     }

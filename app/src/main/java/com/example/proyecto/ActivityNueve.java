@@ -22,7 +22,7 @@ public class ActivityNueve extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nueve);
 
-        lista = (ListView) findViewById(R.id.listView_profesores);
+        lista = findViewById(R.id.listView_profesores);
         adaptador = new AdaptadorProfesor(this, GetArrayItems());
         lista.setAdapter(adaptador);
     }

@@ -4,8 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
-
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -13,11 +13,10 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
-import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -28,13 +27,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.GoogleAuthCredential;
 import com.google.firebase.auth.GoogleAuthProvider;
-
-import java.util.Arrays;
-import java.util.List;
-
 import static com.example.proyecto.utilidades.Constantes.CAMPO_APELLIDOS_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_EMAIL_USUARIO;
 import static com.example.proyecto.utilidades.Constantes.CAMPO_FECHA_NACIMIENTO;
@@ -59,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
 
     public static final int REQUEST_CODE = 1;
-    private String TAG = "GoogleSignInLoginActivity";
 
 
     @Override
@@ -106,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                             "Inicio de sesión con Google correcto", Toast.LENGTH_LONG);
                 toastEntrarGoogle.show();
                 fireBaseAuthWithGoogle(account.getIdToken());
+                createNotification();
             } else {
                 Toast toastEntrarGoogleFallido =
                     Toast.makeText(getApplicationContext(),
@@ -142,13 +135,14 @@ public class MainActivity extends AppCompatActivity {
             if (cursor.getCount()>0){
                 Intent entrar = new Intent(this, SplashScreenInicioSesion.class);
                 startActivity(entrar);
+                createNotificationChannel();
+                createNotification();
                 Toast toastEntrar =
                         Toast.makeText(getApplicationContext(),
                                 "Inicio de sesión correcto", Toast.LENGTH_LONG);
 
                 toastEntrar.show();
 
-                createNotification();
                 
             }else {
                 Toast toastErrorLogin =
@@ -164,6 +158,15 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+    }
+
+    private void createNotificationChannel(){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            CharSequence name = "NOTIFICACION";
+            NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID,name, NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
     }
 
     private void createNotification() {

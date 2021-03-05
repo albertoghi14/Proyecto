@@ -28,7 +28,7 @@ public class ActivityCuatro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuatro);
 
-        lista = (ListView) findViewById(R.id.listView_asignaturas);
+        lista = findViewById(R.id.listView_asignaturas);
         adaptador = new AdaptadorAsignatura(this, GetArrayItems());
         lista.setAdapter(adaptador);
 

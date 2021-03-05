@@ -25,7 +25,7 @@ public class ActivityDiez extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diez);
 
-        lista = (ListView) findViewById(R.id.listView_cursos);
+        lista = findViewById(R.id.listView_cursos);
         adaptador = new AdaptadorCurso(this, GetArrayItems());
         lista.setAdapter(adaptador);
 
